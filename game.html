@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Скоростной шоппинг: Eye-Tracking & Face API</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style_game.css">
+    <script defer src="face-api.min.js"></script>
+    <script defer src="webgazer.js"></script>
+</head>
+<body>
+
+    <!-- Видео-мониторы (скрыты, но нужны для работы WebGazer) -->
+    <div class="video-monitor-system" id="videoMonitor" style="display: none;">
+        <div class="video-box" id="faceMonitor">
+            <div class="label">Face API - Мимика</div>
+            <div id="faceValues" class="values"></div>
+            <div id="faceVideoContainer"></div>
+        </div>
+        <div class="video-box" id="gazeMonitor">
+            <div class="label">WebGazer - Трекинг</div>
+            <div id="gazeValues" class="values"></div>
+            <div id="webgazerVideoParent"></div>
+        </div>
+    </div>
+
+    <!-- Оверлей калибровки -->
+    <div class="calibration-overlay" id="calibrationOverlay">
+        <div class="calibration-modal">
+            <h2>🎯 Настройка системы</h2>
+            <p>Нажмите "Начать" и следуйте инструкциям: кликайте на красные точки (по 5 раз на каждую).</p>
+            <button onclick="startCalibration()" class="calibration-btn" id="startBtn">Начать калибровку</button>
+            <div id="calibrationStatus" class="calibration-status"></div>
+        </div>
+    </div>
+
+    <!-- Игровой контейнер -->
+    <div class="game-container" id="gameContainer" style="display: none;">
+        <h1>🛍️ Скоростной шоппинг</h1>
+
+        <div class="stats">
+            <div>🎯 Заданий выполнено: <span id="tasksDone">0</span> / <span id="totalTasks">3</span></div>
+            <div>⏱️ Время задания: <span id="taskTimer">0.00</span> с</div>
+            <div>👁️ Точки взгляда: <span id="gazeCount">0</span></div>
+            <div>🛒 В корзине: <span id="cartCount">0</span></div>
+        </div>
+
+        <div class="task-panel">
+            <div class="task-text" id="taskText">Загрузка...</div>
+        </div>
+
+        <div class="products-grid" id="productsGrid"></div>
+
+        <div class="status" id="status">
+            <span id="statusText">Посмотрите на товары для активации...</span>
+        </div>
+
+        <div class="control-buttons">
+            <button onclick="resetGame()">🔄 Новая игра</button>
+            <button onclick="exportHeatmapData()">📥 Экспорт JSON</button>
+        </div>
+    </div>
+
+    <div id="gazeIndicator"></div>
+
+    <script src="game_script.js"></script>
+</body>
+</html>

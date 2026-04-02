@@ -1,0 +1,2337 @@
+{
+  "startTime": 1774387899703,
+  "endTime": 1774387923567,
+  "duration": 23864,
+  "gazeData": [
+    {
+      "timestamp": 1774387899924,
+      "taskId": null,
+      "x": 325.17688954685525,
+      "y": 230.13571063417297,
+      "relativeTime": 221
+    },
+    {
+      "timestamp": 1774387900129,
+      "taskId": null,
+      "x": 225.45403051204443,
+      "y": 231.9595369552679,
+      "relativeTime": 426
+    },
+    {
+      "timestamp": 1774387900347,
+      "taskId": null,
+      "x": 217.38391643809817,
+      "y": 193.69269074709302,
+      "relativeTime": 644
+    },
+    {
+      "timestamp": 1774387900542,
+      "taskId": null,
+      "x": 189.42352190127178,
+      "y": 142.27416941782232,
+      "relativeTime": 839
+    },
+    {
+      "timestamp": 1774387900734,
+      "taskId": null,
+      "x": 46.33916110648846,
+      "y": 121.3975298092542,
+      "relativeTime": 1031
+    },
+    {
+      "timestamp": 1774387900966,
+      "taskId": null,
+      "x": 56.221495055204905,
+      "y": 129.8190935412888,
+      "relativeTime": 1263
+    },
+    {
+      "timestamp": 1774387901247,
+      "taskId": null,
+      "x": 140.888451191172,
+      "y": 140.42873579858573,
+      "relativeTime": 1544
+    },
+    {
+      "timestamp": 1774387901428,
+      "taskId": null,
+      "x": 188.09312790699178,
+      "y": 216.79223115982603,
+      "relativeTime": 1725
+    },
+    {
+      "timestamp": 1774387901610,
+      "taskId": null,
+      "x": 342.36152146619895,
+      "y": 171.63082585079653,
+      "relativeTime": 1907
+    },
+    {
+      "timestamp": 1774387901874,
+      "taskId": null,
+      "x": 512.8966985783379,
+      "y": 190.14520558956377,
+      "relativeTime": 2171
+    },
+    {
+      "timestamp": 1774387902073,
+      "taskId": null,
+      "x": 660.4047303590417,
+      "y": 234.1594406322029,
+      "relativeTime": 2370
+    },
+    {
+      "timestamp": 1774387902236,
+      "taskId": null,
+      "x": 814.4506155665341,
+      "y": 233.3583484324304,
+      "relativeTime": 2533
+    },
+    {
+      "timestamp": 1774387902480,
+      "taskId": null,
+      "x": 960.132625142598,
+      "y": 203.74145240401054,
+      "relativeTime": 2777
+    },
+    {
+      "timestamp": 1774387902698,
+      "taskId": null,
+      "x": 1010.1037985728536,
+      "y": 100.3569998245329,
+      "relativeTime": 2995
+    },
+    {
+      "timestamp": 1774387902854,
+      "taskId": null,
+      "x": 1120.0473783652076,
+      "y": 140.89628427066555,
+      "relativeTime": 3151
+    },
+    {
+      "timestamp": 1774387903057,
+      "taskId": null,
+      "x": 1364.1880472151267,
+      "y": 208.48299842105715,
+      "relativeTime": 3354
+    },
+    {
+      "timestamp": 1774387903268,
+      "taskId": null,
+      "x": 1333.9451995561383,
+      "y": 126.20077576391603,
+      "relativeTime": 3565
+    },
+    {
+      "timestamp": 1774387903553,
+      "taskId": null,
+      "x": 1314.237740000775,
+      "y": 511.2431081490671,
+      "relativeTime": 3850
+    },
+    {
+      "timestamp": 1774387903817,
+      "taskId": null,
+      "x": 1100.0674171362039,
+      "y": 490.7544142197854,
+      "relativeTime": 4114
+    },
+    {
+      "timestamp": 1774387904079,
+      "taskId": null,
+      "x": 1235.6074757151414,
+      "y": 463.0637201974132,
+      "relativeTime": 4376
+    },
+    {
+      "timestamp": 1774387904397,
+      "taskId": null,
+      "x": 1145.5811646344468,
+      "y": 501.4075563165059,
+      "relativeTime": 4694
+    },
+    {
+      "timestamp": 1774387904721,
+      "taskId": null,
+      "x": 1044.3800400047974,
+      "y": 509.1100056234715,
+      "relativeTime": 5018
+    },
+    {
+      "timestamp": 1774387904889,
+      "taskId": null,
+      "x": 1161.7975793568314,
+      "y": 410.023781628258,
+      "relativeTime": 5186
+    },
+    {
+      "timestamp": 1774387905056,
+      "taskId": null,
+      "x": 1079.5363463192025,
+      "y": 382.57712144173047,
+      "relativeTime": 5353
+    },
+    {
+      "timestamp": 1774387905220,
+      "taskId": null,
+      "x": 1072.9438604876334,
+      "y": 141.80073501948513,
+      "relativeTime": 5517
+    },
+    {
+      "timestamp": 1774387905423,
+      "taskId": null,
+      "x": 1039.511945660836,
+      "y": -23.736820731645423,
+      "relativeTime": 5720
+    },
+    {
+      "timestamp": 1774387905624,
+      "taskId": null,
+      "x": 1060.9393783102994,
+      "y": -13.089099173581133,
+      "relativeTime": 5921
+    },
+    {
+      "timestamp": 1774387905777,
+      "taskId": null,
+      "x": 1254.2101542519345,
+      "y": -7.996623161964109,
+      "relativeTime": 6074
+    },
+    {
+      "timestamp": 1774387905978,
+      "taskId": null,
+      "x": 1351.589870144577,
+      "y": -141.93209857398946,
+      "relativeTime": 6275
+    },
+    {
+      "timestamp": 1774387906172,
+      "taskId": null,
+      "x": 1175.2432981315299,
+      "y": -40.76342995354784,
+      "relativeTime": 6469
+    },
+    {
+      "timestamp": 1774387906395,
+      "taskId": null,
+      "x": 1193.2638292907668,
+      "y": 34.73260439722041,
+      "relativeTime": 6692
+    },
+    {
+      "timestamp": 1774387906567,
+      "taskId": null,
+      "x": 1249.5830514438564,
+      "y": 144.9759756842663,
+      "relativeTime": 6864
+    },
+    {
+      "timestamp": 1774387906818,
+      "taskId": null,
+      "x": 1237.521705347956,
+      "y": 242.17360970563067,
+      "relativeTime": 7115
+    },
+    {
+      "timestamp": 1774387907067,
+      "taskId": null,
+      "x": 1218.3591811698766,
+      "y": 197.43531275081918,
+      "relativeTime": 7364
+    },
+    {
+      "timestamp": 1774387907278,
+      "taskId": null,
+      "x": 1098.8984437116324,
+      "y": 219.20487650342955,
+      "relativeTime": 7575
+    },
+    {
+      "timestamp": 1774387907476,
+      "taskId": null,
+      "x": 959.6156317074283,
+      "y": 314.83275698454446,
+      "relativeTime": 7773
+    },
+    {
+      "timestamp": 1774387907671,
+      "taskId": null,
+      "x": 1029.1450412531933,
+      "y": 332.7631976760766,
+      "relativeTime": 7968
+    },
+    {
+      "timestamp": 1774387907827,
+      "taskId": null,
+      "x": 1014.7792826768297,
+      "y": 349.70647085538855,
+      "relativeTime": 8124
+    },
+    {
+      "timestamp": 1774387908135,
+      "taskId": null,
+      "x": 1009.836959479165,
+      "y": 348.91097307150915,
+      "relativeTime": 8432
+    },
+    {
+      "timestamp": 1774387908320,
+      "taskId": null,
+      "x": 1140.3406715635128,
+      "y": 331.57818323540204,
+      "relativeTime": 8617
+    },
+    {
+      "timestamp": 1774387908497,
+      "taskId": null,
+      "x": 1146.845760935297,
+      "y": 307.64972162212996,
+      "relativeTime": 8794
+    },
+    {
+      "timestamp": 1774387908716,
+      "taskId": null,
+      "x": 1149.663791124048,
+      "y": 428.4376472059839,
+      "relativeTime": 9013
+    },
+    {
+      "timestamp": 1774387908878,
+      "taskId": null,
+      "x": 1246.7328838282094,
+      "y": 501.9713825458964,
+      "relativeTime": 9175
+    },
+    {
+      "timestamp": 1774387909030,
+      "taskId": null,
+      "x": 1254.9287262179187,
+      "y": 460.40214586389453,
+      "relativeTime": 9327
+    },
+    {
+      "timestamp": 1774387909212,
+      "taskId": null,
+      "x": 1290.7406089167505,
+      "y": 511.2251971277614,
+      "relativeTime": 9509
+    },
+    {
+      "timestamp": 1774387909422,
+      "taskId": null,
+      "x": 1262.2976104599559,
+      "y": 477.9981925904846,
+      "relativeTime": 9719
+    },
+    {
+      "timestamp": 1774387909644,
+      "taskId": null,
+      "x": 1243.0667871473727,
+      "y": 484.5771352409674,
+      "relativeTime": 9941
+    },
+    {
+      "timestamp": 1774387909850,
+      "taskId": null,
+      "x": 1270.9827691057278,
+      "y": 468.93383204351255,
+      "relativeTime": 10147
+    },
+    {
+      "timestamp": 1774387910047,
+      "taskId": null,
+      "x": 1251.8570458755432,
+      "y": 440.32954888144775,
+      "relativeTime": 10344
+    },
+    {
+      "timestamp": 1774387910222,
+      "taskId": null,
+      "x": 1399.4439961588248,
+      "y": 411.9600533730786,
+      "relativeTime": 10519
+    },
+    {
+      "timestamp": 1774387910433,
+      "taskId": null,
+      "x": 1524.905521105473,
+      "y": 419.523649960992,
+      "relativeTime": 10730
+    },
+    {
+      "timestamp": 1774387910622,
+      "taskId": null,
+      "x": 1607.455585438785,
+      "y": 433.3268048432849,
+      "relativeTime": 10919
+    },
+    {
+      "timestamp": 1774387910783,
+      "taskId": null,
+      "x": 1699.7788069883516,
+      "y": 428.74374676028367,
+      "relativeTime": 11080
+    },
+    {
+      "timestamp": 1774387910950,
+      "taskId": null,
+      "x": 1611.8208527617646,
+      "y": 433.96020642883775,
+      "relativeTime": 11247
+    },
+    {
+      "timestamp": 1774387911108,
+      "taskId": null,
+      "x": 1529.53082235896,
+      "y": 533.739446346756,
+      "relativeTime": 11405
+    },
+    {
+      "timestamp": 1774387911294,
+      "taskId": null,
+      "x": 1348.4893112706338,
+      "y": 540.580533675915,
+      "relativeTime": 11591
+    },
+    {
+      "timestamp": 1774387911482,
+      "taskId": null,
+      "x": 1171.5758283298173,
+      "y": 511.25912815540664,
+      "relativeTime": 11779
+    },
+    {
+      "timestamp": 1774387911632,
+      "taskId": null,
+      "x": 1003.3434079240304,
+      "y": 569.4072215429941,
+      "relativeTime": 11929
+    },
+    {
+      "timestamp": 1774387911790,
+      "taskId": null,
+      "x": 891.056853348216,
+      "y": 487.7908884306968,
+      "relativeTime": 12087
+    },
+    {
+      "timestamp": 1774387911991,
+      "taskId": null,
+      "x": 821.1985507981627,
+      "y": 501.66631654347265,
+      "relativeTime": 12288
+    },
+    {
+      "timestamp": 1774387912132,
+      "taskId": null,
+      "x": 848.2612017763271,
+      "y": 580.3125393474253,
+      "relativeTime": 12429
+    },
+    {
+      "timestamp": 1774387912291,
+      "taskId": null,
+      "x": 844.9705882413484,
+      "y": 608.3306722075077,
+      "relativeTime": 12588
+    },
+    {
+      "timestamp": 1774387912455,
+      "taskId": null,
+      "x": 786.0222334034219,
+      "y": 641.5011876025087,
+      "relativeTime": 12752
+    },
+    {
+      "timestamp": 1774387912680,
+      "taskId": null,
+      "x": 773.6714513087633,
+      "y": 632.2382029336997,
+      "relativeTime": 12977
+    },
+    {
+      "timestamp": 1774387912880,
+      "taskId": null,
+      "x": 904.8097589544005,
+      "y": 570.6593737452998,
+      "relativeTime": 13177
+    },
+    {
+      "timestamp": 1774387913039,
+      "taskId": null,
+      "x": 887.493777736924,
+      "y": 529.2129404477505,
+      "relativeTime": 13336
+    },
+    {
+      "timestamp": 1774387913222,
+      "taskId": null,
+      "x": 872.4379322261767,
+      "y": 486.28356501545306,
+      "relativeTime": 13519
+    },
+    {
+      "timestamp": 1774387913397,
+      "taskId": null,
+      "x": 847.8143672105589,
+      "y": 406.73282157070537,
+      "relativeTime": 13694
+    },
+    {
+      "timestamp": 1774387913581,
+      "taskId": null,
+      "x": 828.9136929259818,
+      "y": 369.2174536723097,
+      "relativeTime": 13878
+    },
+    {
+      "timestamp": 1774387913764,
+      "taskId": null,
+      "x": 879.1497874033448,
+      "y": 351.87134559011474,
+      "relativeTime": 14061
+    },
+    {
+      "timestamp": 1774387913962,
+      "taskId": null,
+      "x": 822.7753701855745,
+      "y": 306.1637844420897,
+      "relativeTime": 14259
+    },
+    {
+      "timestamp": 1774387914183,
+      "taskId": null,
+      "x": 870.9239395300443,
+      "y": 256.40913274575735,
+      "relativeTime": 14480
+    },
+    {
+      "timestamp": 1774387914406,
+      "taskId": null,
+      "x": 945.6812088484512,
+      "y": 251.25147876235906,
+      "relativeTime": 14703
+    },
+    {
+      "timestamp": 1774387914593,
+      "taskId": null,
+      "x": 1013.7285366596661,
+      "y": 262.95340987642373,
+      "relativeTime": 14890
+    },
+    {
+      "timestamp": 1774387914841,
+      "taskId": null,
+      "x": 994.8930852160255,
+      "y": 241.7315350252981,
+      "relativeTime": 15138
+    },
+    {
+      "timestamp": 1774387915063,
+      "taskId": null,
+      "x": 1127.2989001496994,
+      "y": 255.22945632972824,
+      "relativeTime": 15360
+    },
+    {
+      "timestamp": 1774387915239,
+      "taskId": null,
+      "x": 1067.9873214229115,
+      "y": 335.42919907742447,
+      "relativeTime": 15536
+    },
+    {
+      "timestamp": 1774387915389,
+      "taskId": null,
+      "x": 1075.2736050803524,
+      "y": 366.2856402906048,
+      "relativeTime": 15686
+    },
+    {
+      "timestamp": 1774387915567,
+      "taskId": null,
+      "x": 1154.8063261802422,
+      "y": 412.9968367199626,
+      "relativeTime": 15864
+    },
+    {
+      "timestamp": 1774387915733,
+      "taskId": null,
+      "x": 1258.7341274024686,
+      "y": 426.5894004953098,
+      "relativeTime": 16030
+    },
+    {
+      "timestamp": 1774387915892,
+      "taskId": null,
+      "x": 1386.4876190501295,
+      "y": 398.48398128123756,
+      "relativeTime": 16189
+    },
+    {
+      "timestamp": 1774387916104,
+      "taskId": null,
+      "x": 1319.3181412137508,
+      "y": 453.4439493943848,
+      "relativeTime": 16401
+    },
+    {
+      "timestamp": 1774387916260,
+      "taskId": null,
+      "x": 1292.7157276255275,
+      "y": 483.8865461635313,
+      "relativeTime": 16557
+    },
+    {
+      "timestamp": 1774387916438,
+      "taskId": null,
+      "x": 1177.4813880683885,
+      "y": 427.47419463111214,
+      "relativeTime": 16735
+    },
+    {
+      "timestamp": 1774387916614,
+      "taskId": null,
+      "x": 1074.5357045367277,
+      "y": 467.05045795856824,
+      "relativeTime": 16911
+    },
+    {
+      "timestamp": 1774387916803,
+      "taskId": null,
+      "x": 1061.3333614961618,
+      "y": 458.83747857521297,
+      "relativeTime": 17100
+    },
+    {
+      "timestamp": 1774387916976,
+      "taskId": null,
+      "x": 928.601408115075,
+      "y": 494.9909693884134,
+      "relativeTime": 17273
+    },
+    {
+      "timestamp": 1774387917177,
+      "taskId": null,
+      "x": 929.2872321698098,
+      "y": 396.16300406553046,
+      "relativeTime": 17474
+    },
+    {
+      "timestamp": 1774387917368,
+      "taskId": null,
+      "x": 859.3202132861272,
+      "y": 276.5823639624224,
+      "relativeTime": 17665
+    },
+    {
+      "timestamp": 1774387917597,
+      "taskId": null,
+      "x": 938.1300434259191,
+      "y": 340.401818925699,
+      "relativeTime": 17894
+    },
+    {
+      "timestamp": 1774387917917,
+      "taskId": null,
+      "x": 990.5113582956743,
+      "y": 224.6948888033698,
+      "relativeTime": 18214
+    },
+    {
+      "timestamp": 1774387918166,
+      "taskId": null,
+      "x": 901.8008309256008,
+      "y": 224.23242817825775,
+      "relativeTime": 18463
+    },
+    {
+      "timestamp": 1774387918395,
+      "taskId": null,
+      "x": 717.6402496441857,
+      "y": 321.7024579941256,
+      "relativeTime": 18692
+    },
+    {
+      "timestamp": 1774387918572,
+      "taskId": null,
+      "x": 521.7924800378254,
+      "y": 342.3441337707569,
+      "relativeTime": 18869
+    },
+    {
+      "timestamp": 1774387918779,
+      "taskId": null,
+      "x": 449.9413526580689,
+      "y": 388.5708494032829,
+      "relativeTime": 19076
+    },
+    {
+      "timestamp": 1774387918975,
+      "taskId": null,
+      "x": 397.3502975363392,
+      "y": 420.278075013462,
+      "relativeTime": 19272
+    },
+    {
+      "timestamp": 1774387919196,
+      "taskId": null,
+      "x": 401.7889323869902,
+      "y": 528.6320944494564,
+      "relativeTime": 19493
+    },
+    {
+      "timestamp": 1774387919422,
+      "taskId": null,
+      "x": 665.1466446281433,
+      "y": 573.2151439523069,
+      "relativeTime": 19719
+    },
+    {
+      "timestamp": 1774387919650,
+      "taskId": null,
+      "x": 731.0194055059393,
+      "y": 663.2238543301538,
+      "relativeTime": 19947
+    },
+    {
+      "timestamp": 1774387919867,
+      "taskId": null,
+      "x": 853.9527299013515,
+      "y": 653.0714789098392,
+      "relativeTime": 20164
+    },
+    {
+      "timestamp": 1774387920044,
+      "taskId": null,
+      "x": 876.5536037207797,
+      "y": 593.112164670228,
+      "relativeTime": 20341
+    },
+    {
+      "timestamp": 1774387920282,
+      "taskId": null,
+      "x": 934.6097029779562,
+      "y": 618.561432880847,
+      "relativeTime": 20579
+    },
+    {
+      "timestamp": 1774387920537,
+      "taskId": null,
+      "x": 961.820295147596,
+      "y": 492.5368988483608,
+      "relativeTime": 20834
+    },
+    {
+      "timestamp": 1774387920827,
+      "taskId": null,
+      "x": 981.0518319073341,
+      "y": 299.369747365935,
+      "relativeTime": 21124
+    },
+    {
+      "timestamp": 1774387921100,
+      "taskId": null,
+      "x": 957.6550106827757,
+      "y": 162.5385629013025,
+      "relativeTime": 21397
+    },
+    {
+      "timestamp": 1774387921319,
+      "taskId": null,
+      "x": 950.7724546046114,
+      "y": -59.817186861149025,
+      "relativeTime": 21616
+    },
+    {
+      "timestamp": 1774387921564,
+      "taskId": null,
+      "x": 830.2646607586813,
+      "y": -228.26359301737597,
+      "relativeTime": 21861
+    },
+    {
+      "timestamp": 1774387921709,
+      "taskId": null,
+      "x": 640.0385487343549,
+      "y": -128.87030635028188,
+      "relativeTime": 22006
+    },
+    {
+      "timestamp": 1774387921975,
+      "taskId": null,
+      "x": 526.3216781577308,
+      "y": -222.3703495316841,
+      "relativeTime": 22272
+    },
+    {
+      "timestamp": 1774387922261,
+      "taskId": null,
+      "x": 353.30936134224237,
+      "y": -131.53077118213952,
+      "relativeTime": 22558
+    },
+    {
+      "timestamp": 1774387922478,
+      "taskId": null,
+      "x": 410.512178128198,
+      "y": -67.15958298356391,
+      "relativeTime": 22775
+    },
+    {
+      "timestamp": 1774387922771,
+      "taskId": null,
+      "x": 168.02851894450427,
+      "y": -53.05804681808326,
+      "relativeTime": 23068
+    },
+    {
+      "timestamp": 1774387923010,
+      "taskId": null,
+      "x": 84.86783356172748,
+      "y": -53.124438688603064,
+      "relativeTime": 23307
+    },
+    {
+      "timestamp": 1774387923249,
+      "taskId": null,
+      "x": 415.79820803498797,
+      "y": -171.90631539683784,
+      "relativeTime": 23546
+    },
+    {
+      "timestamp": 1774387923406,
+      "taskId": null,
+      "x": 776.4073639562203,
+      "y": -220.5047168018492,
+      "relativeTime": 23703
+    },
+    {
+      "timestamp": 1774387923556,
+      "taskId": null,
+      "x": 1133.3514212132518,
+      "y": -269.4806277954778,
+      "relativeTime": 23853
+    }
+  ],
+  "emotionData": [
+    {
+      "timestamp": 1774387899726,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.27255871891975403,
+        "happy": 0.7258898019790649,
+        "sad": 0.00021881498105358332,
+        "angry": 0.0005761550273746252,
+        "fearful": 3.951708640670404e-05,
+        "disgusted": 0.0006336001097224653,
+        "surprised": 8.333955338457599e-05
+      },
+      "relativeTime": 23,
+      "dominantEmotion": "happy"
+    },
+    {
+      "timestamp": 1774387899943,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.1265655755996704,
+        "happy": 0.8717228174209595,
+        "sad": 0.0005054560606367886,
+        "angry": 0.0003276023780927062,
+        "fearful": 2.468649108777754e-05,
+        "disgusted": 0.0007432717247866094,
+        "surprised": 0.00011058335803681985
+      },
+      "relativeTime": 240,
+      "dominantEmotion": "happy"
+    },
+    {
+      "timestamp": 1774387900159,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.9716857075691223,
+        "happy": 0.008544659242033958,
+        "sad": 0.007581541780382395,
+        "angry": 0.004702035803347826,
+        "fearful": 0.005780148785561323,
+        "disgusted": 0.0012377037201076746,
+        "surprised": 0.00046826578909531236
+      },
+      "relativeTime": 456,
+      "dominantEmotion": "neutral"
+    },
+    {
+      "timestamp": 1774387900374,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.9999547004699707,
+        "happy": 2.0911562387482263e-05,
+        "sad": 3.328643288114108e-06,
+        "angry": 1.871553286036942e-05,
+        "fearful": 7.973405824479585e-10,
+        "disgusted": 2.4275025225506397e-06,
+        "surprised": 5.954486326231745e-08
+      },
+      "relativeTime": 671,
+      "dominantEmotion": "neutral"
+    },
+    {
+      "timestamp": 1774387900566,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.9982315301895142,
+        "happy": 0.0016548517160117626,
+        "sad": 5.7460325479041785e-05,
+        "angry": 3.0358985895873047e-05,
+        "fearful": 1.719881339568019e-07,
+        "disgusted": 2.4611001208540983e-05,
+        "surprised": 1.2153071793363779e-06
+      },
+      "relativeTime": 863,
+      "dominantEmotion": "neutral"
+    },
+    {
+      "timestamp": 1774387900825,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.999352216720581,
+        "happy": 0.00041077149217016995,
+        "sad": 8.240215538535267e-05,
+        "angry": 0.00012064215843565762,
+        "fearful": 2.024237119258032e-06,
+        "disgusted": 3.0486062314594164e-05,
+        "surprised": 1.1900992831215262e-06
+      },
+      "relativeTime": 1122,
+      "dominantEmotion": "neutral"
+    },
+    {
+      "timestamp": 1774387900993,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.9943267703056335,
+        "happy": 0.002102107973769307,
+        "sad": 0.0018970174714922905,
+        "angry": 0.0010085913818329573,
+        "fearful": 0.0004533964383881539,
+        "disgusted": 2.540497916925233e-05,
+        "surprised": 0.00018672073201742023
+      },
+      "relativeTime": 1290,
+      "dominantEmotion": "neutral"
+    },
+    {
+      "timestamp": 1774387901275,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.9929837584495544,
+        "happy": 0.00010239076073048636,
+        "sad": 0.0032134123612195253,
+        "angry": 0.0016732467338442802,
+        "fearful": 0.0019353736424818635,
+        "disgusted": 8.367102964257356e-06,
+        "surprised": 8.345372043550014e-05
+      },
+      "relativeTime": 1572,
+      "dominantEmotion": "neutral"
+    },
+    {
+      "timestamp": 1774387901444,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.9989798665046692,
+        "happy": 0.00013507904077414423,
+        "sad": 0.0005637041758745909,
+        "angry": 0.00022533713490702212,
+        "fearful": 1.3082224540994503e-05,
+        "disgusted": 2.0573825167957693e-06,
+        "surprised": 8.080239058472216e-05
+      },
+      "relativeTime": 1741,
+      "dominantEmotion": "neutral"
+    },
+    {
+      "timestamp": 1774387901632,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.9996668100357056,
+        "happy": 3.4321059501962736e-05,
+        "sad": 0.0002643614716362208,
+        "angry": 6.0381757975846995e-06,
+        "fearful": 2.3313768906518817e-06,
+        "disgusted": 1.4315543239717954e-07,
+        "surprised": 2.6106867153430358e-05
+      },
+      "relativeTime": 1929,
+      "dominantEmotion": "neutral"
+    },
+    {
+      "timestamp": 1774387901904,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.9949595332145691,
+        "happy": 2.0972958736820146e-05,
+        "sad": 0.0041788662783801556,
+        "angry": 0.00023922225227579474,
+        "fearful": 2.677876727830153e-05,
+        "disgusted": 3.0145411074045114e-06,
+        "surprised": 0.000571689335629344
+      },
+      "relativeTime": 2201,
+      "dominantEmotion": "neutral"
+    },
+    {
+      "timestamp": 1774387902091,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.9968371391296387,
+        "happy": 4.2640138417482376e-05,
+        "sad": 0.00030923925805836916,
+        "angry": 0.0014255773276090622,
+        "fearful": 5.675186002918053e-06,
+        "disgusted": 1.368850803373789e-06,
+        "surprised": 0.0013783127069473267
+      },
+      "relativeTime": 2388,
+      "dominantEmotion": "neutral"
+    },
+    {
+      "timestamp": 1774387902255,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.9989222288131714,
+        "happy": 7.76937395130517e-06,
+        "sad": 0.0005127906915731728,
+        "angry": 0.0004032083379570395,
+        "fearful": 1.8185560293204617e-06,
+        "disgusted": 2.3410909477661335e-07,
+        "surprised": 0.0001519571669632569
+      },
+      "relativeTime": 2552,
+      "dominantEmotion": "neutral"
+    },
+    {
+      "timestamp": 1774387902498,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.9980935454368591,
+        "happy": 1.1549564078450203e-05,
+        "sad": 0.000808778393547982,
+        "angry": 0.00022422806068789214,
+        "fearful": 4.341739440860692e-06,
+        "disgusted": 3.279492943875084e-07,
+        "surprised": 0.0008572950609959662
+      },
+      "relativeTime": 2795,
+      "dominantEmotion": "neutral"
+    },
+    {
+      "timestamp": 1774387902719,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.9984562397003174,
+        "happy": 1.9856168364640325e-05,
+        "sad": 6.318347004707903e-05,
+        "angry": 0.000630025053396821,
+        "fearful": 4.575178536470048e-05,
+        "disgusted": 2.42577652898035e-06,
+        "surprised": 0.0007823833730071783
+      },
+      "relativeTime": 3016,
+      "dominantEmotion": "neutral"
+    },
+    {
+      "timestamp": 1774387902869,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.9882752299308777,
+        "happy": 3.187608399457531e-06,
+        "sad": 0.003373771673068404,
+        "angry": 0.004225190728902817,
+        "fearful": 5.918297119933413e-06,
+        "disgusted": 5.774831515736878e-05,
+        "surprised": 0.004059090744704008
+      },
+      "relativeTime": 3166,
+      "dominantEmotion": "neutral"
+    },
+    {
+      "timestamp": 1774387903087,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.24692222476005554,
+        "happy": 0.006612326484173536,
+        "sad": 0.06883744150400162,
+        "angry": 0.6436761021614075,
+        "fearful": 0.0038641770370304585,
+        "disgusted": 0.0002206262870458886,
+        "surprised": 0.029867110773921013
+      },
+      "relativeTime": 3384,
+      "dominantEmotion": "angry"
+    },
+    {
+      "timestamp": 1774387903296,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.19714796543121338,
+        "happy": 0.2641007900238037,
+        "sad": 0.5361517071723938,
+        "angry": 0.0008310595876537263,
+        "fearful": 1.6192312841667444e-06,
+        "disgusted": 9.613239672034979e-05,
+        "surprised": 0.001670617493800819
+      },
+      "relativeTime": 3593,
+      "dominantEmotion": "sad"
+    },
+    {
+      "timestamp": 1774387903394,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.5411521196365356,
+        "happy": 0.010301616042852402,
+        "sad": 0.10811727494001389,
+        "angry": 0.3333122730255127,
+        "fearful": 2.4255357857327908e-05,
+        "disgusted": 4.169840849499451e-06,
+        "surprised": 0.007088337559252977
+      },
+      "relativeTime": 3691,
+      "dominantEmotion": "neutral"
+    },
+    {
+      "timestamp": 1774387903578,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.10324545204639435,
+        "happy": 0.0019244826398789883,
+        "sad": 0.13486328721046448,
+        "angry": 0.7550044655799866,
+        "fearful": 1.53983577888539e-07,
+        "disgusted": 0.004959755577147007,
+        "surprised": 2.302369921380887e-06
+      },
+      "relativeTime": 3875,
+      "dominantEmotion": "angry"
+    },
+    {
+      "timestamp": 1774387905442,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.9995685815811157,
+        "happy": 1.4736902812728658e-05,
+        "sad": 0.0004068503621965647,
+        "angry": 4.228912075632252e-06,
+        "fearful": 1.4303000170912128e-06,
+        "disgusted": 3.6013221293984543e-09,
+        "surprised": 4.20778633269947e-06
+      },
+      "relativeTime": 5739,
+      "dominantEmotion": "neutral"
+    },
+    {
+      "timestamp": 1774387905647,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.9992345571517944,
+        "happy": 0.00013808625226374716,
+        "sad": 0.0003336342051625252,
+        "angry": 2.1776937501272187e-05,
+        "fearful": 9.019678691402078e-05,
+        "disgusted": 7.031348303598861e-08,
+        "surprised": 0.000181815805262886
+      },
+      "relativeTime": 5944,
+      "dominantEmotion": "neutral"
+    },
+    {
+      "timestamp": 1774387906007,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.2172207087278366,
+        "happy": 6.191968714119866e-05,
+        "sad": 0.7785987854003906,
+        "angry": 0.004029741045087576,
+        "fearful": 3.997019666712731e-05,
+        "disgusted": 2.4086571102088783e-06,
+        "surprised": 4.666166933020577e-05
+      },
+      "relativeTime": 6304,
+      "dominantEmotion": "sad"
+    },
+    {
+      "timestamp": 1774387906195,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.10391637682914734,
+        "happy": 3.341513729537837e-05,
+        "sad": 0.8951367735862732,
+        "angry": 0.000898872734978795,
+        "fearful": 7.062446002237266e-06,
+        "disgusted": 3.46133148809713e-08,
+        "surprised": 7.424139312206535e-06
+      },
+      "relativeTime": 6492,
+      "dominantEmotion": "sad"
+    },
+    {
+      "timestamp": 1774387906416,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.04593762382864952,
+        "happy": 1.409023843734758e-05,
+        "sad": 0.9528956413269043,
+        "angry": 0.0011162160662934184,
+        "fearful": 2.5904446374624968e-05,
+        "disgusted": 2.5156930405501043e-06,
+        "surprised": 7.998838555067778e-06
+      },
+      "relativeTime": 6713,
+      "dominantEmotion": "sad"
+    },
+    {
+      "timestamp": 1774387906590,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.9159284234046936,
+        "happy": 4.889915726380423e-05,
+        "sad": 0.07123623043298721,
+        "angry": 0.012534513138234615,
+        "fearful": 0.00020901777315884829,
+        "disgusted": 2.69805104835541e-06,
+        "surprised": 4.028622788609937e-05
+      },
+      "relativeTime": 6887,
+      "dominantEmotion": "neutral"
+    },
+    {
+      "timestamp": 1774387906851,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.9031432271003723,
+        "happy": 0.0001704514434095472,
+        "sad": 0.09294988960027695,
+        "angry": 0.0035653808154165745,
+        "fearful": 0.0001208398534799926,
+        "disgusted": 1.540333505545277e-05,
+        "surprised": 3.482657120912336e-05
+      },
+      "relativeTime": 7148,
+      "dominantEmotion": "neutral"
+    },
+    {
+      "timestamp": 1774387907094,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.41868114471435547,
+        "happy": 5.370781946112402e-05,
+        "sad": 0.4437260329723358,
+        "angry": 0.1362449824810028,
+        "fearful": 0.0011574929812923074,
+        "disgusted": 8.972349314717576e-05,
+        "surprised": 4.6926452341722324e-05
+      },
+      "relativeTime": 7391,
+      "dominantEmotion": "sad"
+    },
+    {
+      "timestamp": 1774387908159,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.20194292068481445,
+        "happy": 3.5336142900632694e-07,
+        "sad": 0.7976083755493164,
+        "angry": 0.0002992933732457459,
+        "fearful": 4.685729436459951e-05,
+        "disgusted": 3.344948027006467e-06,
+        "surprised": 9.884947940008715e-05
+      },
+      "relativeTime": 8456,
+      "dominantEmotion": "sad"
+    },
+    {
+      "timestamp": 1774387908337,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.6180858612060547,
+        "happy": 7.705817552050576e-06,
+        "sad": 0.38134634494781494,
+        "angry": 0.0002721872297115624,
+        "fearful": 0.00012404238805174828,
+        "disgusted": 3.256568106735358e-06,
+        "surprised": 0.00016063515795394778
+      },
+      "relativeTime": 8634,
+      "dominantEmotion": "neutral"
+    },
+    {
+      "timestamp": 1774387908733,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.9880986213684082,
+        "happy": 6.309227956080576e-06,
+        "sad": 0.011583897285163403,
+        "angry": 0.00025298428954556584,
+        "fearful": 3.002556923092925e-06,
+        "disgusted": 3.5479291682349867e-07,
+        "surprised": 5.479802348418161e-05
+      },
+      "relativeTime": 9030,
+      "dominantEmotion": "neutral"
+    },
+    {
+      "timestamp": 1774387908896,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.9032958745956421,
+        "happy": 2.7063480956712738e-05,
+        "sad": 0.09218913316726685,
+        "angry": 0.004423872102051973,
+        "fearful": 7.06445371179143e-06,
+        "disgusted": 4.406233529152814e-06,
+        "surprised": 5.26310941495467e-05
+      },
+      "relativeTime": 9193,
+      "dominantEmotion": "neutral"
+    },
+    {
+      "timestamp": 1774387909047,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.980058491230011,
+        "happy": 3.9661808841628954e-05,
+        "sad": 0.018310071900486946,
+        "angry": 0.0015314415795728564,
+        "fearful": 4.2926258174702525e-06,
+        "disgusted": 4.002286459581228e-06,
+        "surprised": 5.213172335061245e-05
+      },
+      "relativeTime": 9344,
+      "dominantEmotion": "neutral"
+    },
+    {
+      "timestamp": 1774387909236,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.8556946516036987,
+        "happy": 1.2495458577177487e-05,
+        "sad": 0.14222051203250885,
+        "angry": 0.0020232228562235832,
+        "fearful": 2.0416220650076866e-05,
+        "disgusted": 3.4501240406825673e-06,
+        "surprised": 2.535280327720102e-05
+      },
+      "relativeTime": 9533,
+      "dominantEmotion": "neutral"
+    },
+    {
+      "timestamp": 1774387909451,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.4190349876880646,
+        "happy": 1.457491975997982e-06,
+        "sad": 0.5801641345024109,
+        "angry": 0.000786597840487957,
+        "fearful": 8.704501851752866e-06,
+        "disgusted": 4.1866834976644896e-07,
+        "surprised": 3.885411388182547e-06
+      },
+      "relativeTime": 9748,
+      "dominantEmotion": "sad"
+    },
+    {
+      "timestamp": 1774387909660,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.6185181140899658,
+        "happy": 2.417393261566758e-05,
+        "sad": 0.3791530728340149,
+        "angry": 0.0021360849495977163,
+        "fearful": 0.00015228689881041646,
+        "disgusted": 4.8562824304099195e-06,
+        "surprised": 1.1397227353882045e-05
+      },
+      "relativeTime": 9957,
+      "dominantEmotion": "neutral"
+    },
+    {
+      "timestamp": 1774387909863,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.9545143842697144,
+        "happy": 7.450943940057186e-06,
+        "sad": 0.04404480755329132,
+        "angry": 0.0014042609836906195,
+        "fearful": 8.33126250654459e-06,
+        "disgusted": 2.2540331201525987e-07,
+        "surprised": 2.0650835722335614e-05
+      },
+      "relativeTime": 10160,
+      "dominantEmotion": "neutral"
+    },
+    {
+      "timestamp": 1774387910075,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.6626800298690796,
+        "happy": 6.9286138568713795e-06,
+        "sad": 0.32914894819259644,
+        "angry": 0.008066976442933083,
+        "fearful": 8.09124467195943e-05,
+        "disgusted": 9.287427928938996e-07,
+        "surprised": 1.520894147688523e-05
+      },
+      "relativeTime": 10372,
+      "dominantEmotion": "neutral"
+    },
+    {
+      "timestamp": 1774387910248,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.5358028411865234,
+        "happy": 1.517429723207897e-06,
+        "sad": 0.4629174470901489,
+        "angry": 0.001211017370223999,
+        "fearful": 3.146321250824258e-05,
+        "disgusted": 5.191806167204049e-07,
+        "surprised": 3.5185545129934326e-05
+      },
+      "relativeTime": 10545,
+      "dominantEmotion": "neutral"
+    },
+    {
+      "timestamp": 1774387910468,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.6475554704666138,
+        "happy": 4.546191576082492e-06,
+        "sad": 0.34279850125312805,
+        "angry": 0.009448569267988205,
+        "fearful": 0.00018565094796940684,
+        "disgusted": 2.5904346330207773e-06,
+        "surprised": 4.633104708773317e-06
+      },
+      "relativeTime": 10765,
+      "dominantEmotion": "neutral"
+    },
+    {
+      "timestamp": 1774387910799,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.8362658023834229,
+        "happy": 6.32513765594922e-05,
+        "sad": 0.1444198191165924,
+        "angry": 0.019010556861758232,
+        "fearful": 0.00016042939387261868,
+        "disgusted": 6.544801726704463e-05,
+        "surprised": 1.4675871170766186e-05
+      },
+      "relativeTime": 11096,
+      "dominantEmotion": "neutral"
+    },
+    {
+      "timestamp": 1774387910965,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.8728023767471313,
+        "happy": 3.609605846577324e-05,
+        "sad": 0.12028022110462189,
+        "angry": 0.006819136906415224,
+        "fearful": 3.34330543410033e-05,
+        "disgusted": 2.280808075738605e-05,
+        "surprised": 5.990389126964146e-06
+      },
+      "relativeTime": 11262,
+      "dominantEmotion": "neutral"
+    },
+    {
+      "timestamp": 1774387911124,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.8476423621177673,
+        "happy": 3.289775850134902e-05,
+        "sad": 0.1494971066713333,
+        "angry": 0.0027267455589026213,
+        "fearful": 2.4368933736695908e-05,
+        "disgusted": 6.574126018676907e-05,
+        "surprised": 1.0699957783799618e-05
+      },
+      "relativeTime": 11421,
+      "dominantEmotion": "neutral"
+    },
+    {
+      "timestamp": 1774387911312,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.9551801085472107,
+        "happy": 3.5811430279864e-05,
+        "sad": 0.03937944769859314,
+        "angry": 0.005335591267794371,
+        "fearful": 2.6735786377685145e-05,
+        "disgusted": 3.239340367144905e-05,
+        "surprised": 9.963026968762279e-06
+      },
+      "relativeTime": 11609,
+      "dominantEmotion": "neutral"
+    },
+    {
+      "timestamp": 1774387911497,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.8860358595848083,
+        "happy": 5.0048485718434677e-05,
+        "sad": 0.1048203855752945,
+        "angry": 0.008964404463768005,
+        "fearful": 6.475409463746473e-05,
+        "disgusted": 4.499217902775854e-05,
+        "surprised": 1.9589047951740213e-05
+      },
+      "relativeTime": 11794,
+      "dominantEmotion": "neutral"
+    },
+    {
+      "timestamp": 1774387911647,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.7187312245368958,
+        "happy": 9.516376303508878e-05,
+        "sad": 0.27782124280929565,
+        "angry": 0.0032785756047815084,
+        "fearful": 1.7552985809743404e-05,
+        "disgusted": 4.8206584324361756e-05,
+        "surprised": 8.050506039580796e-06
+      },
+      "relativeTime": 11944,
+      "dominantEmotion": "neutral"
+    },
+    {
+      "timestamp": 1774387911805,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.7721794247627258,
+        "happy": 8.857330249156803e-05,
+        "sad": 0.21065983176231384,
+        "angry": 0.01690971851348877,
+        "fearful": 2.15538966585882e-05,
+        "disgusted": 9.591397974872962e-05,
+        "surprised": 4.5126780605642125e-05
+      },
+      "relativeTime": 12102,
+      "dominantEmotion": "neutral"
+    },
+    {
+      "timestamp": 1774387912897,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.8135477900505066,
+        "happy": 7.833579002181068e-05,
+        "sad": 0.18074190616607666,
+        "angry": 0.0038658352568745613,
+        "fearful": 0.001333699095994234,
+        "disgusted": 0.00034691349719651043,
+        "surprised": 8.549634367227554e-05
+      },
+      "relativeTime": 13194,
+      "dominantEmotion": "neutral"
+    },
+    {
+      "timestamp": 1774387913603,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.9325740337371826,
+        "happy": 2.3182067252491834e-06,
+        "sad": 0.058143045753240585,
+        "angry": 0.009187734685838223,
+        "fearful": 1.006423553917557e-05,
+        "disgusted": 5.4509073379449546e-05,
+        "surprised": 2.8317072064965032e-05
+      },
+      "relativeTime": 13900,
+      "dominantEmotion": "neutral"
+    },
+    {
+      "timestamp": 1774387913780,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.9861702919006348,
+        "happy": 3.0396217880479526e-06,
+        "sad": 0.009285823442041874,
+        "angry": 0.004412040114402771,
+        "fearful": 5.880796379642561e-06,
+        "disgusted": 7.665655721211806e-05,
+        "surprised": 4.6201766963349655e-05
+      },
+      "relativeTime": 14077,
+      "dominantEmotion": "neutral"
+    },
+    {
+      "timestamp": 1774387914200,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.9370909929275513,
+        "happy": 0.0001847806852310896,
+        "sad": 0.047129880636930466,
+        "angry": 0.014794547110795975,
+        "fearful": 4.288887339498615e-06,
+        "disgusted": 0.0007499655475839972,
+        "surprised": 4.559689841698855e-05
+      },
+      "relativeTime": 14497,
+      "dominantEmotion": "neutral"
+    },
+    {
+      "timestamp": 1774387914433,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.9764823317527771,
+        "happy": 0.0006869395147077739,
+        "sad": 0.014507410116493702,
+        "angry": 0.008128977380692959,
+        "fearful": 7.282056685653515e-06,
+        "disgusted": 0.00012869344209320843,
+        "surprised": 5.8488240028964356e-05
+      },
+      "relativeTime": 14730,
+      "dominantEmotion": "neutral"
+    },
+    {
+      "timestamp": 1774387914612,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.7573735117912292,
+        "happy": 0.0003173762816004455,
+        "sad": 0.23183372616767883,
+        "angry": 0.010365474037826061,
+        "fearful": 2.9181863283156417e-05,
+        "disgusted": 5.547043838305399e-05,
+        "surprised": 2.5349636416649446e-05
+      },
+      "relativeTime": 14909,
+      "dominantEmotion": "neutral"
+    },
+    {
+      "timestamp": 1774387914863,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.930125892162323,
+        "happy": 0.0010069891577586532,
+        "sad": 0.05771554261445999,
+        "angry": 0.011015716008841991,
+        "fearful": 1.601381336513441e-05,
+        "disgusted": 9.282879182137549e-05,
+        "surprised": 2.7087786293122917e-05
+      },
+      "relativeTime": 15160,
+      "dominantEmotion": "neutral"
+    },
+    {
+      "timestamp": 1774387915084,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.9673534631729126,
+        "happy": 0.0012406617170199752,
+        "sad": 0.03067602962255478,
+        "angry": 0.0007123214309103787,
+        "fearful": 2.143324081771425e-06,
+        "disgusted": 8.478703421133105e-06,
+        "surprised": 6.835111889813561e-06
+      },
+      "relativeTime": 15381,
+      "dominantEmotion": "neutral"
+    },
+    {
+      "timestamp": 1774387915255,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.9753169417381287,
+        "happy": 0.006867143325507641,
+        "sad": 0.016079528257250786,
+        "angry": 0.0014289937680587173,
+        "fearful": 6.522968760691583e-06,
+        "disgusted": 7.397176523227245e-05,
+        "surprised": 0.00022686790907755494
+      },
+      "relativeTime": 15552,
+      "dominantEmotion": "neutral"
+    },
+    {
+      "timestamp": 1774387915409,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.9887376427650452,
+        "happy": 0.0015819096006453037,
+        "sad": 0.008360765874385834,
+        "angry": 0.0012869862839579582,
+        "fearful": 1.1773620371968718e-06,
+        "disgusted": 9.676216905063484e-06,
+        "surprised": 2.198812762799207e-05
+      },
+      "relativeTime": 15706,
+      "dominantEmotion": "neutral"
+    },
+    {
+      "timestamp": 1774387915587,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.9775899648666382,
+        "happy": 0.0026008302811533213,
+        "sad": 0.015031469985842705,
+        "angry": 0.004539878107607365,
+        "fearful": 4.577486834023148e-06,
+        "disgusted": 3.118974564131349e-05,
+        "surprised": 0.0002021665422944352
+      },
+      "relativeTime": 15884,
+      "dominantEmotion": "neutral"
+    },
+    {
+      "timestamp": 1774387915748,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.9694600105285645,
+        "happy": 9.619163756724447e-05,
+        "sad": 0.021478695794939995,
+        "angry": 0.008940616622567177,
+        "fearful": 3.550575797817146e-07,
+        "disgusted": 1.0104245120601263e-05,
+        "surprised": 1.4146290595817845e-05
+      },
+      "relativeTime": 16045,
+      "dominantEmotion": "neutral"
+    },
+    {
+      "timestamp": 1774387915908,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.9903648495674133,
+        "happy": 7.985488628037274e-05,
+        "sad": 0.00881136953830719,
+        "angry": 0.000738130125682801,
+        "fearful": 1.4993169372701232e-07,
+        "disgusted": 3.4804295978574373e-07,
+        "surprised": 5.5416603572666645e-06
+      },
+      "relativeTime": 16205,
+      "dominantEmotion": "neutral"
+    },
+    {
+      "timestamp": 1774387916123,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.9807348251342773,
+        "happy": 1.941380833159201e-05,
+        "sad": 0.016294680535793304,
+        "angry": 0.0027472060173749924,
+        "fearful": 1.6074404811661225e-06,
+        "disgusted": 2.112689799105283e-06,
+        "surprised": 0.00020014075562357903
+      },
+      "relativeTime": 16420,
+      "dominantEmotion": "neutral"
+    },
+    {
+      "timestamp": 1774387916277,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.9883145689964294,
+        "happy": 0.00017094126087613404,
+        "sad": 0.008775794878602028,
+        "angry": 0.0026474862825125456,
+        "fearful": 1.073658836503455e-06,
+        "disgusted": 2.4735873012105003e-05,
+        "surprised": 6.5483502112329e-05
+      },
+      "relativeTime": 16574,
+      "dominantEmotion": "neutral"
+    },
+    {
+      "timestamp": 1774387916460,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.992376983165741,
+        "happy": 3.8303103792713955e-05,
+        "sad": 0.005484886467456818,
+        "angry": 0.0020461168605834246,
+        "fearful": 7.744291110611812e-07,
+        "disgusted": 2.5451490728300996e-06,
+        "surprised": 5.0453541916795075e-05
+      },
+      "relativeTime": 16757,
+      "dominantEmotion": "neutral"
+    },
+    {
+      "timestamp": 1774387916637,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.9929835200309753,
+        "happy": 0.00012528765364550054,
+        "sad": 0.0019750522915273905,
+        "angry": 0.0048913718201220036,
+        "fearful": 6.390735620698251e-07,
+        "disgusted": 9.972857696993742e-06,
+        "surprised": 1.4078023014008068e-05
+      },
+      "relativeTime": 16934,
+      "dominantEmotion": "neutral"
+    },
+    {
+      "timestamp": 1774387916820,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.9925934076309204,
+        "happy": 3.217410630895756e-05,
+        "sad": 0.0051200673915445805,
+        "angry": 0.002147446619346738,
+        "fearful": 1.3031302614763263e-06,
+        "disgusted": 8.113535841403063e-06,
+        "surprised": 9.759978274814785e-05
+      },
+      "relativeTime": 17117,
+      "dominantEmotion": "neutral"
+    },
+    {
+      "timestamp": 1774387916994,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.9903008341789246,
+        "happy": 0.00020186153415124863,
+        "sad": 0.003594899084419012,
+        "angry": 0.005819151643663645,
+        "fearful": 1.4504603313980624e-06,
+        "disgusted": 7.063375232974067e-05,
+        "surprised": 1.1092261956946459e-05
+      },
+      "relativeTime": 17291,
+      "dominantEmotion": "neutral"
+    },
+    {
+      "timestamp": 1774387917192,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.998197078704834,
+        "happy": 6.800957635277882e-05,
+        "sad": 0.0005531642236746848,
+        "angry": 0.0011582147562876344,
+        "fearful": 1.674859362310599e-07,
+        "disgusted": 1.568829065945465e-05,
+        "surprised": 7.758473657304421e-06
+      },
+      "relativeTime": 17489,
+      "dominantEmotion": "neutral"
+    },
+    {
+      "timestamp": 1774387917405,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.9977188110351562,
+        "happy": 1.0889923032664228e-05,
+        "sad": 0.002090843627229333,
+        "angry": 0.0001305641926592216,
+        "fearful": 1.6293651583509927e-07,
+        "disgusted": 7.785836828588799e-07,
+        "surprised": 4.7773188271094114e-05
+      },
+      "relativeTime": 17702,
+      "dominantEmotion": "neutral"
+    },
+    {
+      "timestamp": 1774387917627,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.9927084445953369,
+        "happy": 4.485623321670573e-07,
+        "sad": 0.00010048679541796446,
+        "angry": 0.00017130222113337368,
+        "fearful": 6.668641958640364e-07,
+        "disgusted": 3.3381670050403045e-07,
+        "surprised": 0.0070182401686906815
+      },
+      "relativeTime": 17924,
+      "dominantEmotion": "neutral"
+    },
+    {
+      "timestamp": 1774387917957,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.9976376891136169,
+        "happy": 5.90712261328008e-05,
+        "sad": 0.0003402679867576808,
+        "angry": 0.00010514229506952688,
+        "fearful": 3.0928789783502e-05,
+        "disgusted": 2.409173021078459e-06,
+        "surprised": 0.001824472681619227
+      },
+      "relativeTime": 18254,
+      "dominantEmotion": "neutral"
+    },
+    {
+      "timestamp": 1774387918198,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.6568120121955872,
+        "happy": 0.023937677964568138,
+        "sad": 0.3062017560005188,
+        "angry": 0.004858190659433603,
+        "fearful": 0.0036066717002540827,
+        "disgusted": 0.0015706800622865558,
+        "surprised": 0.003012909321114421
+      },
+      "relativeTime": 18495,
+      "dominantEmotion": "neutral"
+    },
+    {
+      "timestamp": 1774387918418,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.2519890069961548,
+        "happy": 0.24577856063842773,
+        "sad": 0.5008200407028198,
+        "angry": 0.0011740424670279026,
+        "fearful": 1.6292293366859667e-05,
+        "disgusted": 0.00018318384536541998,
+        "surprised": 3.8929105357965454e-05
+      },
+      "relativeTime": 18715,
+      "dominantEmotion": "sad"
+    },
+    {
+      "timestamp": 1774387918593,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.43480855226516724,
+        "happy": 0.02054448612034321,
+        "sad": 0.5395939946174622,
+        "angry": 0.003421872854232788,
+        "fearful": 6.744860002072528e-06,
+        "disgusted": 0.00018598443421069533,
+        "surprised": 0.0014384398236870766
+      },
+      "relativeTime": 18890,
+      "dominantEmotion": "sad"
+    },
+    {
+      "timestamp": 1774387918797,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.08992991596460342,
+        "happy": 0.013811779208481312,
+        "sad": 0.32949692010879517,
+        "angry": 0.5494768619537354,
+        "fearful": 0.0012819479452446103,
+        "disgusted": 0.007998825050890446,
+        "surprised": 0.008003780618309975
+      },
+      "relativeTime": 19094,
+      "dominantEmotion": "angry"
+    },
+    {
+      "timestamp": 1774387919007,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.09595219790935516,
+        "happy": 0.0864512249827385,
+        "sad": 0.8159592151641846,
+        "angry": 0.000854404061101377,
+        "fearful": 3.0449671157839475e-06,
+        "disgusted": 0.0005558694247156382,
+        "surprised": 0.0002240354660898447
+      },
+      "relativeTime": 19304,
+      "dominantEmotion": "sad"
+    },
+    {
+      "timestamp": 1774387919219,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.43367671966552734,
+        "happy": 0.04015153646469116,
+        "sad": 0.517716109752655,
+        "angry": 0.0044997320510447025,
+        "fearful": 0.000764154305215925,
+        "disgusted": 0.002481971401721239,
+        "surprised": 0.0007097485358826816
+      },
+      "relativeTime": 19516,
+      "dominantEmotion": "sad"
+    },
+    {
+      "timestamp": 1774387919445,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.754401683807373,
+        "happy": 0.09081190824508667,
+        "sad": 0.0025043736677616835,
+        "angry": 0.00143241451587528,
+        "fearful": 0.0003764503635466099,
+        "disgusted": 0.0008982389699667692,
+        "surprised": 0.149574875831604
+      },
+      "relativeTime": 19742,
+      "dominantEmotion": "neutral"
+    },
+    {
+      "timestamp": 1774387919673,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.9460563659667969,
+        "happy": 0.03290450572967529,
+        "sad": 0.0021915845572948456,
+        "angry": 0.001098973210901022,
+        "fearful": 3.695780105772428e-05,
+        "disgusted": 0.0014187954366207123,
+        "surprised": 0.016292812302708626
+      },
+      "relativeTime": 19970,
+      "dominantEmotion": "neutral"
+    },
+    {
+      "timestamp": 1774387919888,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.9893860816955566,
+        "happy": 0.002459254115819931,
+        "sad": 0.0070833140052855015,
+        "angry": 0.00011235886631766334,
+        "fearful": 1.7700592991332087e-07,
+        "disgusted": 2.919971120718401e-05,
+        "surprised": 0.0009295896743424237
+      },
+      "relativeTime": 20185,
+      "dominantEmotion": "neutral"
+    },
+    {
+      "timestamp": 1774387920066,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.9972105622291565,
+        "happy": 0.000917999423108995,
+        "sad": 0.0015170604456216097,
+        "angry": 0.00013102969387546182,
+        "fearful": 4.3693511031506205e-08,
+        "disgusted": 2.6612411602400243e-05,
+        "surprised": 0.00019674321811180562
+      },
+      "relativeTime": 20363,
+      "dominantEmotion": "neutral"
+    },
+    {
+      "timestamp": 1774387920304,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.9906041026115417,
+        "happy": 0.004019339103251696,
+        "sad": 0.004519766662269831,
+        "angry": 0.00010048679541796446,
+        "fearful": 1.7871353463760897e-07,
+        "disgusted": 2.4081808078335598e-05,
+        "surprised": 0.0007322807214222848
+      },
+      "relativeTime": 20601,
+      "dominantEmotion": "neutral"
+    },
+    {
+      "timestamp": 1774387920576,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.9928777813911438,
+        "happy": 0.002008596435189247,
+        "sad": 0.0031987105030566454,
+        "angry": 0.0004812596598640084,
+        "fearful": 6.347908083625953e-07,
+        "disgusted": 0.00021653604926541448,
+        "surprised": 0.0012164675863459706
+      },
+      "relativeTime": 20873,
+      "dominantEmotion": "neutral"
+    },
+    {
+      "timestamp": 1774387920855,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.9945403933525085,
+        "happy": 0.0015412775101140141,
+        "sad": 0.002123225014656782,
+        "angry": 0.0001621122646611184,
+        "fearful": 1.1681753449011012e-06,
+        "disgusted": 0.00011416243796702474,
+        "surprised": 0.0015175198204815388
+      },
+      "relativeTime": 21152,
+      "dominantEmotion": "neutral"
+    },
+    {
+      "timestamp": 1774387921127,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.996438205242157,
+        "happy": 0.0032958178780972958,
+        "sad": 0.0001538515934953466,
+        "angry": 5.18267779625603e-06,
+        "fearful": 1.4276495541309941e-08,
+        "disgusted": 3.433864776525297e-06,
+        "surprised": 0.00010358190047554672
+      },
+      "relativeTime": 21424,
+      "dominantEmotion": "neutral"
+    },
+    {
+      "timestamp": 1774387921342,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.9869316816329956,
+        "happy": 0.0008838999201543629,
+        "sad": 0.010700610466301441,
+        "angry": 0.00012508871441241354,
+        "fearful": 9.00768498013349e-07,
+        "disgusted": 5.9930618590442464e-05,
+        "surprised": 0.0012977616861462593
+      },
+      "relativeTime": 21639,
+      "dominantEmotion": "neutral"
+    },
+    {
+      "timestamp": 1774387921580,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.9447554349899292,
+        "happy": 0.002090966794639826,
+        "sad": 0.05189231410622597,
+        "angry": 0.00018405898299533874,
+        "fearful": 7.957744855957571e-06,
+        "disgusted": 0.00020758849859703332,
+        "surprised": 0.0008615644183009863
+      },
+      "relativeTime": 21877,
+      "dominantEmotion": "neutral"
+    },
+    {
+      "timestamp": 1774387921725,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.9956467151641846,
+        "happy": 0.0012237037299200892,
+        "sad": 0.002327356254681945,
+        "angry": 0.0001419751497451216,
+        "fearful": 4.733880814455915e-06,
+        "disgusted": 5.793796663056128e-05,
+        "surprised": 0.000597445119637996
+      },
+      "relativeTime": 22022,
+      "dominantEmotion": "neutral"
+    },
+    {
+      "timestamp": 1774387922001,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.9693266153335571,
+        "happy": 0.004583250731229782,
+        "sad": 0.025188075378537178,
+        "angry": 0.00010821943578775972,
+        "fearful": 4.632210675481474e-06,
+        "disgusted": 0.00025107021792791784,
+        "surprised": 0.0005381350638344884
+      },
+      "relativeTime": 22298,
+      "dominantEmotion": "neutral"
+    },
+    {
+      "timestamp": 1774387922294,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.9939854741096497,
+        "happy": 0.004251390229910612,
+        "sad": 0.0008886988507583737,
+        "angry": 4.2753908928716555e-05,
+        "fearful": 6.646197903137363e-07,
+        "disgusted": 7.19573290552944e-05,
+        "surprised": 0.0007589274318888783
+      },
+      "relativeTime": 22591,
+      "dominantEmotion": "neutral"
+    },
+    {
+      "timestamp": 1774387922509,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.9930917620658875,
+        "happy": 0.0032618504483252764,
+        "sad": 0.003375101136043668,
+        "angry": 6.929620576556772e-05,
+        "fearful": 1.9461581359792035e-06,
+        "disgusted": 3.8279460568446666e-05,
+        "surprised": 0.0001619987015146762
+      },
+      "relativeTime": 22806,
+      "dominantEmotion": "neutral"
+    },
+    {
+      "timestamp": 1774387922801,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.9972888827323914,
+        "happy": 0.0019416834693402052,
+        "sad": 0.00041769578820094466,
+        "angry": 0.00011379738862160593,
+        "fearful": 8.842121133056935e-06,
+        "disgusted": 4.470475687412545e-05,
+        "surprised": 0.00018448788614477962
+      },
+      "relativeTime": 23098,
+      "dominantEmotion": "neutral"
+    },
+    {
+      "timestamp": 1774387923035,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.9964472055435181,
+        "happy": 0.0024416144005954266,
+        "sad": 0.0007856494630686939,
+        "angry": 4.8326135583920404e-05,
+        "fearful": 4.093214158729097e-07,
+        "disgusted": 7.884621300036088e-05,
+        "surprised": 0.00019796979904640466
+      },
+      "relativeTime": 23332,
+      "dominantEmotion": "neutral"
+    },
+    {
+      "timestamp": 1774387923264,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.994813084602356,
+        "happy": 0.001074056257493794,
+        "sad": 0.004022572189569473,
+        "angry": 1.7608746929909103e-05,
+        "fearful": 1.5530575865341234e-06,
+        "disgusted": 7.19677973393118e-06,
+        "surprised": 6.379081605700776e-05
+      },
+      "relativeTime": 23561,
+      "dominantEmotion": "neutral"
+    },
+    {
+      "timestamp": 1774387923419,
+      "taskId": null,
+      "expressions": {
+        "neutral": 0.9992397427558899,
+        "happy": 0.0003461918968241662,
+        "sad": 0.00017704533820506185,
+        "angry": 2.1877681319892872e-06,
+        "fearful": 2.8724356226916825e-08,
+        "disgusted": 2.203678832302103e-06,
+        "surprised": 0.00023292863625101745
+      },
+      "relativeTime": 23716,
+      "dominantEmotion": "neutral"
+    }
+  ],
+  "sessionId": "session_1774387899703_ieiaz85t0",
+  "timestamp": 1774387899703,
+  "browser": {
+    "name": "Chrome",
+    "version": "146",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+    "platform": "Win32",
+    "language": "ru-RU"
+  },
+  "screen": {
+    "width": 1920,
+    "height": 1080,
+    "availWidth": 1920,
+    "availHeight": 1032,
+    "pixelRatio": 1,
+    "viewport": {
+      "width": 1920,
+      "height": 945
+    }
+  },
+  "tasks": [],
+  "currentTaskId": null,
+  "interactionEvents": [
+    {
+      "timestamp": 1774387906568,
+      "type": "task_complete",
+      "data": {
+        "task": 1,
+        "duration": 86.687
+      },
+      "taskId": "shop_game"
+    },
+    {
+      "timestamp": 1774387906569,
+      "type": "size_select",
+      "data": {
+        "product": "tshirt",
+        "size": "M"
+      },
+      "taskId": "shop_game"
+    },
+    {
+      "timestamp": 1774387909424,
+      "type": "double_click",
+      "data": {
+        "target": "pants_icon"
+      },
+      "taskId": "shop_game"
+    },
+    {
+      "timestamp": 1774387912294,
+      "type": "task_complete",
+      "data": {
+        "task": 2,
+        "duration": 5.725
+      },
+      "taskId": "shop_game"
+    },
+    {
+      "timestamp": 1774387912294,
+      "type": "size_select",
+      "data": {
+        "product": "pants",
+        "size": "M"
+      },
+      "taskId": "shop_game"
+    },
+    {
+      "timestamp": 1774387914423,
+      "type": "task_complete",
+      "data": {
+        "task": 3,
+        "duration": 2.129
+      },
+      "taskId": "shop_game"
+    },
+    {
+      "timestamp": 1774387914423,
+      "type": "color_select",
+      "data": {
+        "product": "shoes",
+        "color": "чёрный"
+      },
+      "taskId": "shop_game"
+    }
+  ],
+  "errors": [],
+  "participantNumber": "2222",
+  "glasses": false,
+  "consentData": true,
+  "consentExperiment": true,
+  "calibrationAccuracy": 36,
+  "statistics": {
+    "totalTasks": 0,
+    "completedTasks": 0,
+    "totalGazePoints": 116,
+    "totalEmotionSamples": 94,
+    "totalInteractions": 7,
+    "avgTaskDuration": 0,
+    "emotionDistribution": {
+      "happy": 2,
+      "neutral": 78,
+      "angry": 3,
+      "sad": 11
+    }
+  }
+}
