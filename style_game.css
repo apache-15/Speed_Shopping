@@ -6,10 +6,10 @@ body {
     height: 100vh;
     background-color: #f0f0f0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-    overflow: hidden;
+    overflow-y: auto;
 }
 
-/* Оверлей калибровки (начальное окно) */
+/* Оверлей калибровки */
 .calibration-overlay {
     position: fixed;
     top: 0;
@@ -22,7 +22,6 @@ body {
     justify-content: center;
     z-index: 10000;
 }
-
 .calibration-modal {
     background: #fff;
     padding: 32px;
@@ -31,12 +30,6 @@ body {
     max-width: 450px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
-
-.calibration-modal h2 {
-    color: #2196f3;
-    margin-top: 0;
-}
-
 .calibration-btn {
     background: #4CAF50;
     color: white;
@@ -45,16 +38,11 @@ body {
     border-radius: 4px;
     font-size: 16px;
     cursor: pointer;
-    transition: all 0.2s ease;
     margin-top: 20px;
 }
+.calibration-btn:hover { opacity: 0.9; }
 
-.calibration-btn:hover {
-    opacity: 0.9;
-    transform: translateY(-1px);
-}
-
-/* Система видео-мониторов */
+/* Видео-мониторы */
 .video-monitor-system {
     position: fixed;
     top: 50%;
@@ -65,7 +53,6 @@ body {
     z-index: 9000;
     pointer-events: none;
 }
-
 .video-box {
     width: 320px;
     height: 240px;
@@ -76,7 +63,6 @@ body {
     position: relative;
     border: 1px solid #ddd;
 }
-
 .video-box .label {
     position: absolute;
     top: 0;
@@ -85,12 +71,9 @@ body {
     background: rgba(33, 150, 243, 0.9);
     color: white;
     font-size: 12px;
-    font-weight: 500;
     padding: 6px;
     text-align: center;
-    z-index: 10;
 }
-
 .video-box .values {
     position: absolute;
     bottom: 10px;
@@ -101,31 +84,28 @@ body {
     border-radius: 4px;
     font-family: monospace;
     font-size: 12px;
-    z-index: 10;
 }
 
-/* Точки калибровки (9 точек) */
+/* Точки калибровки */
 .CalibrationPoint {
     width: 20px;
     height: 20px;
-    background-color: red;
-    border: none;
+    background: red;
     border-radius: 50%;
     position: fixed;
     opacity: 0.3;
     cursor: pointer;
     z-index: 10001;
-    transition: opacity 0.2s, background-color 0.2s;
+    transition: opacity 0.2s;
 }
 
 /* Игровой контейнер */
-.game-container {
+#gameContainer {
     padding-top: 20px;
     text-align: center;
     height: 100vh;
     overflow-y: auto;
 }
-
 .stats {
     display: flex;
     justify-content: center;
@@ -134,10 +114,8 @@ body {
     background: #fff;
     padding: 15px;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
     flex-wrap: wrap;
 }
-
 .task-panel {
     background: #2d2d2f;
     color: white;
@@ -148,12 +126,49 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+.task-text { font-size: 1.2rem; font-weight: bold; }
 
-.task-text {
-    font-size: 1.2rem;
-    font-weight: bold;
+/* Фильтры */
+.gender-filters {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px auto;
+}
+.gender-filter {
+    padding: 8px 24px;
+    font-size: 14px;
+    border-radius: 40px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    background: white;
+}
+.gender-filter.active {
+    background: #3b82f6;
+    border-color: #3b82f6;
+    color: white;
+}
+.sub-filters {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin: 15px auto;
+    flex-wrap: wrap;
+}
+.sub-filter {
+    padding: 6px 20px;
+    font-size: 13px;
+    border-radius: 40px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    background: white;
+}
+.sub-filter.active {
+    background: #3b82f6;
+    color: white;
 }
 
+/* Товары */
 .products-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -162,7 +177,6 @@ body {
     margin: 0 auto;
     padding: 0 20px;
 }
-
 .product-card {
     background: white;
     border-radius: 16px;
@@ -172,11 +186,7 @@ body {
     text-align: left;
     position: relative;
 }
-.product-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-}
-
+.product-card:hover { transform: translateY(-4px); }
 .product-badge {
     position: absolute;
     top: 12px;
@@ -187,15 +197,8 @@ body {
     font-weight: bold;
     z-index: 2;
 }
-.product-badge.new {
-    background: #3b82f6;
-    color: white;
-}
-.product-badge.sale {
-    background: #ff4444;
-    color: white;
-}
-
+.product-badge.new { background: #3b82f6; color: white; }
+.product-badge.sale { background: #ff4444; color: white; }
 .product-image {
     height: 180px;
     background: #f9f9fb;
@@ -204,32 +207,11 @@ body {
     justify-content: center;
     padding: 10px;
 }
-.product-image img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-}
-
-.product-card h3 {
-    font-size: 16px;
-    margin: 12px;
-}
-
-.product-price {
-    margin: 0 12px 10px;
-}
-.current-price {
-    font-weight: 700;
-    font-size: 18px;
-    color: #1d1d1f;
-}
-.old-price {
-    text-decoration: line-through;
-    color: #999;
-    font-size: 12px;
-    margin-left: 8px;
-}
-
+.product-image img { max-width: 100%; max-height: 100%; object-fit: contain; }
+.product-card h3 { font-size: 16px; margin: 12px; }
+.product-price { margin: 0 12px 10px; }
+.current-price { font-weight: 700; font-size: 18px; }
+.old-price { text-decoration: line-through; color: #999; font-size: 12px; margin-left: 8px; }
 .product-options {
     margin: 0 12px 12px;
     padding: 10px;
@@ -237,81 +219,18 @@ body {
     border-radius: 12px;
     font-size: 12px;
 }
-
-.size-selector span, .color-selector span {
-    font-size: 11px;
-    color: #666;
-    display: block;
-    margin-bottom: 6px;
-}
-
-.size-buttons {
-    display: flex;
-    gap: 6px;
-    flex-wrap: wrap;
-}
-.size-option {
+.size-selector span, .color-selector span { font-size: 11px; color: #666; display: block; margin-bottom: 6px; }
+.size-buttons, .color-buttons { display: flex; gap: 6px; flex-wrap: wrap; }
+.size-option, .color-opt {
     min-width: 32px;
     height: 32px;
-    padding: 0 8px;
     border: 1px solid #ddd;
     background: white;
     border-radius: 8px;
-    font-size: 12px;
     cursor: pointer;
 }
-.size-option.selected {
-    background: #3b82f6;
-    color: white;
-    border-color: #3b82f6;
-}
-
-.hidden-select .double-click-icon {
-    background: #e5e5ea;
-    padding: 6px 10px;
-    border-radius: 8px;
-    font-size: 11px;
-    cursor: pointer;
-    text-align: center;
-}
-.hidden-select select {
-    display: none;
-    margin-top: 6px;
-    width: 100%;
-    padding: 6px;
-    border-radius: 8px;
-}
-
-.deep-menu {
-    font-size: 12px;
-}
-.deep-menu > div {
-    padding: 6px;
-    border-bottom: 1px solid #eee;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-}
-.deep-menu > div:hover {
-    background: #f5f5f5;
-}
-.hidden {
-    display: none;
-}
-.color-picker {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    margin-top: 10px;
-}
-.color-option {
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    cursor: pointer;
-    border: 1px solid #ddd;
-}
-
+.size-option.selected { background: #3b82f6; color: white; border-color: #3b82f6; }
+.color-opt { width: 32px; border-radius: 50%; }
 .add-to-cart {
     width: calc(100% - 24px);
     margin: 0 12px 16px;
@@ -323,10 +242,17 @@ body {
     cursor: pointer;
     font-weight: 600;
 }
-.add-to-cart:hover {
-    background: #3b82f6;
+.add-to-cart:hover { background: #3b82f6; }
+.card-heat-indicator {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    padding: 2px 6px;
+    border-radius: 12px;
+    font-size: 10px;
 }
-
 .status {
     font-size: 14px;
     margin: 15px auto;
@@ -335,7 +261,6 @@ body {
     border-radius: 10px;
     max-width: 800px;
 }
-
 .control-buttons {
     display: flex;
     justify-content: center;
@@ -351,34 +276,154 @@ body {
     border: none;
     background: #667eea;
     color: white;
+}
+.control-buttons button:hover { background: #764ba2; }
+
+/* ========== БАННЕРЫ — УВЕЛИЧЕННЫЕ КАРТИНКИ, МАЛЕНЬКИЕ КРЕСТИКИ БЕЗ КРУЖКОВ ========== */
+#bannerOverlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    z-index: 9999;
+    pointer-events: auto;
+}
+
+.exp-banner {
+    position: absolute;
+    border-radius: 24px;
+    padding: 20px;
+    text-align: center;
+    z-index: 10001;
+    min-width: 380px;
+    min-height: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+/* Разные фоны и границы */
+.exp-banner.classic {
+    background: linear-gradient(145deg, #fff 0%, #f5f5f5 100%);
+    border: 2px solid #ff9900;
+}
+.exp-banner.multi {
+    background: linear-gradient(135deg, #ffe6e6, #ffb3b3);
+    border: 2px solid #cc0000;
+}
+.exp-banner.shifted {
+    background: linear-gradient(145deg, #e6f0ff, #cce0ff);
+    border: 2px solid #0066cc;
+}
+.exp-banner.camouflage {
+    background: linear-gradient(145deg, #f9f9f9, #ececec);
+    border: 2px solid #bbb;
+}
+.exp-banner.dark {
+    background: linear-gradient(145deg, #2a2a2a, #1a1a1a);
+    border: 2px solid #ff6600;
+}
+
+.banner-text {
+    font-size: 26px;
+    font-weight: 800;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.classic .banner-text { color: #ff6600; }
+.multi .banner-text { color: #b30000; }
+.shifted .banner-text { color: #004d99; }
+.camouflage .banner-text { color: #555; font-weight: 600; }
+.dark .banner-text { color: #ffaa66; }
+
+.banner-subtext {
+    font-size: 15px;
+    margin: 10px 0;
     font-weight: 500;
 }
-.control-buttons button:hover {
-    background: #764ba2;
+.classic .banner-subtext { color: #cc5500; }
+.multi .banner-subtext { color: #990000; }
+.shifted .banner-subtext { color: #003366; }
+.camouflage .banner-subtext { color: #888; }
+.dark .banner-subtext { color: #ddd; }
+
+/* Увеличенные картинки */
+.exp-banner .banner-img {
+    width: 180px;
+    height: auto;
+    margin: 16px auto;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    background: white;
+    padding: 10px;
+}
+.exp-banner.multi .banner-img-small {
+    width: 120px;
+    margin: 12px auto;
+    border-radius: 16px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    background: white;
+    padding: 8px;
 }
 
-/* Точка взгляда (Gaze Indicator) */
-#gazeIndicator {
-    position: fixed;
+/* Крестики — маленькие, без кружков */
+.banner-close {
     width: 20px;
     height: 20px;
-    border: 2px solid #ff0000;
-    border-radius: 50%;
-    background: rgba(255, 0, 0, 0.2);
-    pointer-events: none;
-    z-index: 10002;
-    transform: translate(-50%, -50%);
-    display: none;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>') no-repeat center/contain;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+/* Для всех, кроме dark — чёрный крестик, прозрачный фон */
+.classic .banner-close,
+.multi .banner-close,
+.shifted .banner-close,
+.camouflage .banner-close {
+    background-color: transparent;
+    border-radius: 0;
+    box-shadow: none;
+}
+/* Для camouflage — полупрозрачный */
+.camouflage .banner-close {
+    opacity: 0.2;
+}
+/* Для dark — тёмно-красный, тоже полупрозрачный */
+.dark .banner-close {
+    opacity: 0.35;
+    background-color: transparent;
+    filter: invert(14%) sepia(98%) saturate(5000%) hue-rotate(0deg) brightness(0.6);
 }
 
-.card-heat-indicator {
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    background: rgba(0,0,0,0.6);
+/* Фальшивая кнопка для dark */
+.exp-banner.dark .fake-action-btn {
+    background: linear-gradient(145deg, #ff884d, #ff5500);
     color: white;
-    font-size: 10px;
-    padding: 2px 5px;
-    border-radius: 10px;
-    z-index: 5;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 60px;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 16px 0 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: 0.1s linear;
+}
+.exp-banner.dark .fake-action-btn:hover {
+    transform: scale(0.98);
+}
+
+/* Скрываем точку взгляда WebGazer */
+#webgazerGazeDot,
+.webgazer-gaze-dot {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+}
+
+/* Скрытый canvas */
+#heatmapCanvas {
+    display: none;
 }
