@@ -476,7 +476,7 @@ async function captureHeatmapScreenshot(taskIdx) {
     heatmapContainer.style.height = window.innerHeight + 'px';
     document.body.appendChild(heatmapContainer);
 
-    // 2. Настраиваем тепловую карту — ОБЛАЧНЫЙ ЭФФЕКТ
+    // 2. Настраиваем тепловую карту
     const heatmapInstance = h337.create({
         container: heatmapContainer,
         radius: 70,
@@ -486,14 +486,14 @@ async function captureHeatmapScreenshot(taskIdx) {
 
     });
 
-    // 3. Подготавливаем данные
+    // 3. Подготовка данных
     const points = currentBannerGaze.map(point => ({
         x: Math.floor(point.x),
         y: Math.floor(point.y),
         value: 1
     }));
 
-    // Группировка близких точек (усиливает интенсивность)
+    // Группировка близких точек
     const groupedPoints = [];
     const groupRadius = 30;
     points.forEach(p => {
@@ -517,7 +517,7 @@ async function captureHeatmapScreenshot(taskIdx) {
         data: groupedPoints
     });
 
-    // 5. Ждём отрисовки облака
+    // 5. чтобы блок успел отрисоваться
     await new Promise(r => setTimeout(r, 150));
 
     // 6. Получаем canvas тепловой карты
@@ -528,26 +528,26 @@ async function captureHeatmapScreenshot(taskIdx) {
         return;
     }
 
-    // 7. Создаём новый canvas с ПРОЗРАЧНЫМ фоном (только облака)
+    // 7. Создаём новый canvas с прозрачным фоном
     const finalCanvas = document.createElement('canvas');
     finalCanvas.width = heatmapCanvas.width;
     finalCanvas.height = heatmapCanvas.height;
     const ctx = finalCanvas.getContext('2d');
 
-    // Заливаем прозрачным фоном (можно оставить белым, если нужно)
+    // Заливаем прозрачным фоном
     ctx.clearRect(0, 0, finalCanvas.width, finalCanvas.height);
 
-    // Рисуем только тепловую карту (облака) — без фона страницы
+    // Рисуем только тепловую карту(без фона сайта)
     ctx.drawImage(heatmapCanvas, 0, 0);
 
-    // 8. Сохраняем результат
+    // 8. сохр. данных
     const dataURL = finalCanvas.toDataURL('image/png');
     taskHeatmapScreenshots[taskIdx] = dataURL;
 
     // 9. Удаляем временный контейнер
     document.body.removeChild(heatmapContainer);
 
-    console.log(`🔥 Тепловое облако для задания ${taskIdx+1} создано (${groupedPoints.length} зон, без фона)`);
+    console.log(` Тепловое облако для задания ${taskIdx+1} создано (${groupedPoints.length} зон)`);
 }
 
 // ========== 9. ФИЛЬТРАЦИЯ ТОВАРОВ И ОТРИСОВКА ==========
