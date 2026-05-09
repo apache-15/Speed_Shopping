@@ -1,0 +1,61 @@
+// ========== КАТАЛОГ ТОВАРОВ ==========
+const products = [
+    { id: 1, name: 'Синяя футболка', category: 'tshirt', gender: 'men', price: 2000, oldPrice: 3500,
+    image: 'картинки/blue-T-shirt.png', sizes: ['S','M','L','XL'], colors: ['синий'], badge: 'new' },
+    { id: 2, name: 'Белая футболка', category: 'tshirt', gender: 'men', price: 1500, oldPrice: 2500,
+    image: 'картинки/white-T-shirt.png', sizes: ['S','M','L','XL'], colors: ['белый'], badge: null },
+    { id: 3, name: 'Чёрная футболка', category: 'tshirt', gender: 'women', price: 1800, oldPrice: null,
+    image: 'картинки/black-T-shirt.png', sizes: ['XS','S','M','L'], colors: ['чёрный'], badge: null },
+    { id: 4, name: 'Худи серое', category: 'hoodie', gender: 'men', price: 4500, oldPrice: 6500,
+    image: 'картинки/grey-hoody.png', sizes: ['S','M','L','XL'], colors: ['серый'], badge: 'sale' },
+    { id: 5, name: 'Худи чёрное', category: 'hoodie', gender: 'men', price: 4900, oldPrice: null,
+    image: 'картинки/black-hoody.png', sizes: ['S','M','L','XL'], colors: ['чёрный'], badge: null },
+    { id: 6, name: 'Чёрные штаны', category: 'pants', gender: 'men', price: 3200, oldPrice: null,
+    image: 'картинки/black-pants.png', sizes: ['XS','S','M','L','XL'], colors: ['чёрный'], badge: null },
+    { id: 7, name: 'Карго штаны', category: 'pants', gender: 'men', price: 3800, oldPrice: 4800,
+    image: 'картинки/cargo-pants.png', sizes: ['S','M','L','XL'], colors: ['хаки'], badge: 'sale' },
+    { id: 8, name: 'Джинсы', category: 'pants', gender: 'women', price: 4200, oldPrice: 5500,
+    image: 'картинки/jeans.png', sizes: ['XS','S','M','L'], colors: ['синий'], badge: 'sale' },
+    { id: 9, name: 'Кроссовки белые', category: 'shoes', gender: 'men', price: 5900, oldPrice: 7900,
+    image: 'картинки/white-sneakers.png', sizes: ['40','41','42','43','44'], colors: ['белый'], badge: 'sale' },
+    { id: 10, name: 'Кроссовки чёрные', category: 'shoes', gender: 'men', price: 6200, oldPrice: null,
+    image: 'картинки/black-sneakers.png', sizes: ['40','41','42','43','44'], colors: ['чёрный'], badge: null },
+    { id: 11, name: 'Кроссовки серые', category: 'shoes', gender: 'women', price: 5500, oldPrice: 6800,
+    image: 'картинки/grey-sneakers.png', sizes: ['36','37','38','39','40'], colors: ['серый'], badge: 'sale' },
+    { id: 12, name: 'Кроссовки розовые', category: 'shoes', gender: 'women', price: 5900, oldPrice: null,
+    image: 'картинки/pink-sneakers.png', sizes: ['36','37','38','39','40'], colors: ['розовый'], badge: 'new' },
+    { id: 13, name: 'Розовая футболка', category: 'tshirt', gender: 'women', price: 1900, oldPrice: 2800,
+    image: 'картинки/pink-T-shirt.png', sizes: ['XS','S','M','L'], colors: ['розовый'], badge: 'new' },
+    { id: 14, name: 'Худи бежевое', category: 'hoodie', gender: 'women', price: 4800, oldPrice: null,
+    image: 'картинки/beige-hoody.png', sizes: ['XS','S','M','L'], colors: ['бежевый'], badge: null },
+    { id: 15, name: 'Юбка-миди', category: 'pants', gender: 'women', price: 3500, oldPrice: 4500,
+    image: 'картинки/skirt.png', sizes: ['XS','S','M','L'], colors: ['чёрный'], badge: null },
+    { id: 16, name: 'Рюкзак', category: 'accessory', gender: 'unisex', price: 2800, oldPrice: 3900,
+    image: 'картинки/backpack.png', sizes: [], colors: ['чёрный'], badge: 'sale' },
+    { id: 17, name: 'Кепка', category: 'accessory', gender: 'unisex', price: 1200, oldPrice: 1900,
+    image: 'картинки/cap.png', sizes: [], colors: ['чёрный','белый'], badge: null },
+    { id: 18, name: 'Сумка через плечо', category: 'accessory', gender: 'unisex', price: 2200, oldPrice: 3200,
+    image: 'картинки/bag.png', sizes: [], colors: ['коричневый'], badge: null },
+    { id: 19, name: 'Синие кроссовки', category: 'shoes', gender: 'men', price: 6200, oldPrice: null,
+    image: 'картинки/blue-sneakers.png', sizes: ['40','41','42','43','44'], colors: ['синий'], badge: null },
+    { id: 20, name: 'Чёрная кепка', category: 'accessory', gender: 'unisex', price: 1200, oldPrice: null,
+    image: 'картинки/black-cap.png', sizes: [], colors: ['чёрный'], badge: null },
+    { id: 21, name: 'Зелёные штаны', category: 'pants', gender: 'men', price: 3800, oldPrice: 4800,
+    image: 'картинки/green-pants.png', sizes: ['S','M','L','XL'], colors: ['хаки'], badge: 'sale' },
+    { id: 22, name: 'Коричневые штаны', category: 'pants', gender: 'women', price: 3500, oldPrice: 4500,
+    image: 'картинки/brown-pants.png', sizes: ['XS','S','M','L'], colors: ['коричневый'], badge: null },
+    { id: 23, name: 'Шарф', category: 'accessory', gender: 'unisex', price: 800, oldPrice: null,
+    image: 'картинки/scarf.png', sizes: [], colors: ['серый'], badge: null },
+];
+
+// ========== ЗАДАНИЯ ==========
+const tasks = [
+    { text: 'Задание 1: Купите синюю футболку (ID 1).', products: [{ id: 1 }], bannerType: 'classic' },
+    { text: 'Задание 2: Купите серое худи (ID 4).', products: [{ id: 4 }], bannerType: 'multi' },
+    { text: 'Задание 3: Купите чёрные штаны (ID 6).', products: [{ id: 6 }], bannerType: 'shifted' },
+    { text: 'Задание 4: Купите джинсы (ID 8).', products: [{ id: 8 }], bannerType: 'camouflage' },
+    { text: 'Задание 5: Купите белые кроссовки (ID 9).', products: [{ id: 9 }], bannerType: 'dark' }
+];
+
+// ========== КОНСТАНТЫ ==========
+const EMOTION_RECORD_INTERVAL = 3; // интервал (в циклах опроса Face API) между сохранением эмоции

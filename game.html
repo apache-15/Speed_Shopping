@@ -16,6 +16,26 @@
     <script src="https://cdn.jsdelivr.net/npm/heatmap.js@2.0.5/build/heatmap.min.js"></script>
 </head>
 <body>
+    <!-- Регистрация: ввод имени -->
+    <div id="registerNameOverlay" class="register-overlay" style="display: flex;">
+        <div class="register-modal">
+            <h2>Введите имя пользователя</h2>
+            <input type="text" id="usernameInput" placeholder="Имя пользователя">
+            <button id="nameSubmitBtn">Далее</button>
+        </div>
+    </div>
+
+    <!-- Регистрация: согласие (скрыто) -->
+    <div id="registerConsentOverlay" class="register-overlay" style="display: none;">
+        <div class="register-modal">
+            <h2>Согласие на участие</h2>
+            <p>Я согласен принять участие в эксперименте и даю согласие на обработку данных.</p>
+            <label>
+                <input type="checkbox" id="consentCheckbox"> Я согласен
+            </label>
+            <button id="consentSubmitBtn">Далее</button>
+        </div>
+    </div>
 
     <!-- Видео-мониторы (скрыты, но нужны для работы) -->
     <div class="video-monitor-system" id="videoMonitor" style="display: none;">
@@ -80,6 +100,16 @@
 
     <div id="bannerOverlay" style="display: none;"></div>
 
-    <script src="game_script.js"></script>
+    <!-- Модули приложения  -->
+    <script src="config.js"></script>
+    <script src="state.js"></script>
+    <script src="ui.js"></script>
+    <script src="face-api.js"></script>
+    <script src="webgazer-init.js"></script>
+    <script src="banners.js"></script>
+    <script src="products.js"></script>
+    <script src="tasks.js"></script>
+    <script src="export.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
