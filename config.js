@@ -1,4 +1,4 @@
-// ========== КАТАЛОГ ТОВАРОВ ==========
+//каталог товаров
 const products = [
     { id: 1, name: 'Синяя футболка', category: 'tshirt', gender: 'men', price: 2000, oldPrice: 3500,
     image: 'картинки/blue-T-shirt.png', sizes: ['S','M','L','XL'], colors: ['синий'], badge: 'new' },
@@ -48,7 +48,7 @@ const products = [
     image: 'картинки/scarf.png', sizes: [], colors: ['серый'], badge: null },
 ];
 
-// ========== ЗАДАНИЯ ==========
+//задания
 const tasks = [
     { text: 'Задание 1: Купите синюю футболку (ID 1).', products: [{ id: 1 }], bannerType: 'classic' },
     { text: 'Задание 2: Купите серое худи (ID 4).', products: [{ id: 4 }], bannerType: 'multi' },
@@ -57,5 +57,5 @@ const tasks = [
     { text: 'Задание 5: Купите белые кроссовки (ID 9).', products: [{ id: 9 }], bannerType: 'dark' }
 ];
 
-// ========== КОНСТАНТЫ ==========
-const EMOTION_RECORD_INTERVAL = 3; // интервал (в циклах опроса Face API) между сохранением эмоции
+//константа для промежутка между записью эмоций
+const EMOTION_RECORD_INTERVAL = 3;

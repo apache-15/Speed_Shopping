@@ -1,11 +1,9 @@
-// ========== ТОЧКА ВХОДА ==========
-// Зависимости: все предыдущие модули
-
+//входной модуль
 document.addEventListener('DOMContentLoaded', () => {
 
     document.getElementById('calibrationOverlay').style.display='none';
     document.getElementById('registerNameOverlay').style.display = 'flex';
-
+    //ввод имени пользователя
     document.getElementById('nameSubmitBtn').addEventListener('click', ()=>{
         const input = document.getElementById('usernameInput');
         const name = input.value.trim();
@@ -17,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('registerNameOverlay').style.display = 'none';
         document.getElementById('registerConsentOverlay').style.display = 'flex';
     });
-
+    //согласие на участие
     document.getElementById('consentSubmitBtn').addEventListener('click', ()=>{
         const checkbox = document.getElementById('consentCheckbox');
         if(!checkbox.checked){

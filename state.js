@@ -1,9 +1,9 @@
-// ========== ГЛОБАЛЬНОЕ СОСТОЯНИЕ ПРИЛОЖЕНИЯ ==========
+//переменные для контроля состояния приложения и его модулей
 const AppState = {
-    // Регистрация
+    //регистрация
     userName: null,
 
-    // Состояние игры
+    //состояние игры
     currentTaskIndex: 0,
     taskStartTime: null,
     taskCompleted: false,
@@ -18,7 +18,7 @@ const AppState = {
     taskProductsPurchased: [],
     experimentCompleted: false,
 
-    // Баннеры
+    //баннеры
     activeBannersCount: 0,
     currentBannerStartTime: null,
     currentBannerType: null,
@@ -29,12 +29,12 @@ const AppState = {
     bannerGazeData: [],
     currentBannerGaze: [],
 
-    // Эмоции
+    //эмоции
     emotionData: [],
     emotionRecordCounter: 0,
     currentEmotion: 'neutral',
 
-    // Тепловые карты и экспорт
+    //тепловые карты и экспорт
     taskHeatmapScreenshots: [],
     sessionId: null
 };

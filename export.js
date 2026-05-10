@@ -1,6 +1,4 @@
-// ========== МОДУЛЬ ЭКСПОРТА ==========
-// Зависимости: config.js (tasks), state.js (AppState), ui.js (showToast)
-
+//тепловая карта для баннера
 async function captureHeatmapScreenshot(taskIdx) {
     if (!AppState.currentBannerGaze.length) {
         console.warn(`Нет данных взгляда для задания ${taskIdx+1}`);
@@ -8,7 +6,6 @@ async function captureHeatmapScreenshot(taskIdx) {
         return;
     }
 
-    // 1. Создаём контейнер для тепловой карты (вне экрана)
     const heatmapContainer = document.createElement('div');
     heatmapContainer.style.position = 'fixed';
     heatmapContainer.style.top = '-10000px';
@@ -17,7 +14,6 @@ async function captureHeatmapScreenshot(taskIdx) {
     heatmapContainer.style.height = window.innerHeight + 'px';
     document.body.appendChild(heatmapContainer);
 
-    // 2. Настраиваем тепловую карту
     const heatmapInstance = h337.create({
         container: heatmapContainer,
         radius: 70,
@@ -26,14 +22,13 @@ async function captureHeatmapScreenshot(taskIdx) {
         minOpacity: 0.15,
     });
 
-    // 3. Подготовка данных
+    //подготовка и группировка точек взгляда
     const points = AppState.currentBannerGaze.map(point => ({
         x: Math.floor(point.x),
         y: Math.floor(point.y),
         value: 1
     }));
 
-    // Группировка близких точек
     const groupedPoints = [];
     const groupRadius = 30;
     points.forEach(p => {
@@ -50,17 +45,14 @@ async function captureHeatmapScreenshot(taskIdx) {
         if (!found) groupedPoints.push({ x: p.x, y: p.y, value: 1 });
     });
 
-    // 4. Загружаем данные
     const maxValue = Math.max(...groupedPoints.map(p => p.value), 1);
     heatmapInstance.setData({
         max: maxValue,
         data: groupedPoints
     });
 
-    // 5. чтобы блок успел отрисоваться
     await new Promise(r => setTimeout(r, 150));
 
-    // 6. Получаем canvas тепловой карты
     const heatmapCanvas = heatmapContainer.querySelector('canvas');
     if (!heatmapCanvas) {
         document.body.removeChild(heatmapContainer);
@@ -68,28 +60,22 @@ async function captureHeatmapScreenshot(taskIdx) {
         return;
     }
 
-    // 7. Создаём новый canvas с прозрачным фоном
+    //перенос тепловой карты на прозрачный фон
     const finalCanvas = document.createElement('canvas');
     finalCanvas.width = heatmapCanvas.width;
     finalCanvas.height = heatmapCanvas.height;
     const ctx = finalCanvas.getContext('2d');
-
-    // Заливаем прозрачным фоном
     ctx.clearRect(0, 0, finalCanvas.width, finalCanvas.height);
-
-    // Рисуем только тепловую карту(без фона сайта)
     ctx.drawImage(heatmapCanvas, 0, 0);
 
-    // 8. сохр. данных
     const dataURL = finalCanvas.toDataURL('image/png');
     AppState.taskHeatmapScreenshots[taskIdx] = dataURL;
 
-    // 9. Удаляем временный контейнер
     document.body.removeChild(heatmapContainer);
-
-    console.log(` Тепловое облако для задания ${taskIdx+1} создано (${groupedPoints.length} зон)`);
+    console.log(`Тепловая карта для задания ${taskIdx+1} создана`);
 }
 
+//сохранение результатов в ZIP
 async function exportResultsAsZip() {
     if (!AppState.sessionId) AppState.sessionId = 'session_' + Date.now();
     const safeUserName = AppState.userName ? AppState.userName.replace(/[^a-z0-9]/gi, '_') : 'anonymous';
@@ -97,6 +83,7 @@ async function exportResultsAsZip() {
     const zip = new JSZip();
     const folder = zip.folder(AppState.sessionId);
 
+    //расчёт средних времён по типам баннеров
     const bannerStats = {};
     AppState.bannerMetrics.forEach(m => {
         if (!bannerStats[m.type]) bannerStats[m.type] = { totalTime: 0, count: 0, times: [] };
@@ -129,6 +116,7 @@ async function exportResultsAsZip() {
     };
     folder.file('report.json', JSON.stringify(report, null, 2));
 
+    //сохранение тепловых карт
     for (let i = 0; i < AppState.taskHeatmapScreenshots.length; i++) {
         if (AppState.taskHeatmapScreenshots[i]) {
             const base64 = AppState.taskHeatmapScreenshots[i].split(',')[1];
@@ -138,5 +126,5 @@ async function exportResultsAsZip() {
 
     const content = await zip.generateAsync({ type: 'blob' });
     saveAs(content, zipFileName);
-    showToast('📦 Результаты сохранены в ZIP');
+    showToast('Результаты сохранены в ZIP');
 }

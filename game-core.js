@@ -1,4 +1,6 @@
-// ========== UI ==========
+//Вспомогательные функции интерфейса
+
+//показывает временное всплывающее уведомление в правом нижнем углу
 function showToast(msg) {
     const toast = document.createElement('div');
     toast.style.cssText = 'position:fixed;bottom:20px;right:20px;background:#333;color:#fff;padding:10px 20px;border-radius:20px;z-index:10000;';
@@ -7,6 +9,7 @@ function showToast(msg) {
     setTimeout(() => toast.remove(), 2000);
 }
 
+//сбрасывает игру и перезапускает эксперимент
 function resetGame() {
     if (confirm('Сбросить игру? Все несохранённые данные будут потеряны.')) {
         AppState.experimentCompleted = false;
@@ -14,8 +17,10 @@ function resetGame() {
     }
 }
 
+//инициализирует кнопки фильтрации товаров по полу и категории
 function initFilters() {
     const subFiltersContainer = document.getElementById('subFilters');
+    //обновляет набор фильтров категорий при смене пола
     function updateSubFilters(gender) {
         subFiltersContainer.innerHTML = '';
         const btns = [
@@ -37,6 +42,7 @@ function initFilters() {
             subFiltersContainer.appendChild(button);
         });
     }
+    //обработчики на кнопки пола
     document.querySelectorAll('.gender-filter').forEach(link => {
         link.addEventListener('click', (e) => {
             e.preventDefault();
@@ -51,7 +57,9 @@ function initFilters() {
     updateSubFilters(AppState.currentGenderFilter);
 }
 
-// ========== BANNERS ==========
+//Управление баннерами
+
+//возвращает рекламный текст в зависимости от типа баннера с эмоджи
 function getBannerText(type) {
     const map = {
         classic: '🎁 СКИДКА 20% НА ФУТБОЛКИ',
@@ -63,6 +71,7 @@ function getBannerText(type) {
     return map[type] || 'Реклама';
 }
 
+//показывает баннер(ы) заданного типа, приостанавливает игру и начинает замер времени
 function showExperimentalBanner(type) {
     if (AppState.experimentCompleted || !type) return;
     AppState.gameActive = false;
@@ -91,6 +100,7 @@ function showExperimentalBanner(type) {
     }
 }
 
+//создаёт DOM-элемент баннера с учётом типа
 function createBanner(type, position) {
     AppState.activeBannersCount++;
     const overlay = document.getElementById('bannerOverlay');
@@ -114,16 +124,18 @@ function createBanner(type, position) {
         content += `<img src="${randomImg}" class="banner-img" alt="товар">`;
     }
 
+    //добавление пояснительного текста под типу
     if (type === 'classic') {
-        content += `<div class="banner-subtext">Скидка действует сегодня • Бесплатная доставка</div>`;
+        content += `<div class="banner-subtext">Скидка действует сегодня ; Бесплатная доставка</div>`;
     } else if (type === 'camouflage') {
-        content += `<div class="banner-subtext">Только для новых клиентов • Предложение ограничено</div>`;
+        content += `<div class="banner-subtext">Только для новых клиентов ; Предложение ограничено</div>`;
     } else if (type === 'dark') {
         content += `<div class="banner-subtext">Нажмите на кнопку ниже, чтобы закрыть окно</div>`;
     } else if (type === 'shifted') {
-        content += `<div class="banner-subtext">Новые поступления • Специальные цены</div>`;
+        content += `<div class="banner-subtext">Новые поступления ; Специальные цены</div>`;
     }
 
+    //размещение кнопки закрытия и фальшивой кнопки
     if (type === 'dark') {
         content += `<button class="fake-action-btn">МОЖНО ЗАКРЫТЬ ОКНО</button>`;
         content += `<div class="banner-close" style="opacity:0.35; width:20px; height:20px; top:16px; right:16px;"></div>`;
@@ -142,12 +154,13 @@ function createBanner(type, position) {
         const fake = banner.querySelector('.fake-action-btn');
         fake.addEventListener('click', () => {
             AppState.misClicks++;
-            showToast("Это реклама. Найдите настоящий крестик (маленький значок в углу).");
+            showToast("Это реклама. Найдите настоящий крестик.");
         });
     }
     overlay.appendChild(banner);
 }
 
+//закрывает баннер, фиксирует время, эмоцию после закрытия и пополняет метрики
 function closeBanner(banner, type) {
     const now = Date.now();
     let timeSpent;
@@ -185,7 +198,9 @@ function closeBanner(banner, type) {
     }
 }
 
-// ========== PRODUCTS ==========
+//Товары и трекинг взгляда
+
+//возвращает список товаров, отфильтрованных по текущим фильтрам
 function getFilteredProducts() {
     let filtered = products.filter(p => {
         if (AppState.currentGenderFilter !== 'all' && p.gender !== AppState.currentGenderFilter && p.gender !== 'unisex') return false;
@@ -198,6 +213,7 @@ function getFilteredProducts() {
     return filtered;
 }
 
+//перестраивает сетку товаров с учётом фильтров и накопленной статистики взглядов
 function renderProducts() {
     const grid = document.getElementById('productsGrid');
     if (!grid) return;
@@ -214,13 +230,18 @@ function renderProducts() {
         const views = AppState.gazeStats[product.id] || 0;
         card.innerHTML = `
             ${badgeHtml}
-            <div class="product-image"><img src="${product.image}" alt="${product.name}" onerror="this.src='https://placehold.co/400x500/e3e3e3/333?text=${encodeURIComponent(product.name)}'"></div>
+            <div class="product-image"><img src="${product.image}" alt="${product.name}"
+            onerror="this.src='https://placehold.co/400x500/e3e3e3/333?text=${encodeURIComponent(product.name)}'"></div>
             <h3>${product.name}</h3>
             <div class="product-category">${getCategoryName(product.category)}</div>
-            <div class="product-price"><span class="current-price">${product.price.toLocaleString()} ₽</span>${product.oldPrice ? `<span class="old-price">${product.oldPrice.toLocaleString()} ₽</span>` : ''}</div>
+            <div class="product-price"><span class="current-price">${product.price.toLocaleString()}
+            ₽</span>${product.oldPrice ? `<span class="old-price">${product.oldPrice.toLocaleString()} ₽</span>` : ''}</div>
             <div class="product-options">
-                ${product.sizes.length ? `<div class="size-selector"><span>Размер:</span><div class="size-buttons">${product.sizes.map(s => `<button class="size-option" data-size="${s}">${s}</button>`).join('')}</div></div>` : ''}
-                ${product.colors && product.colors.length > 1 ? `<div class="color-selector"><span>Цвет:</span><div class="color-buttons">${product.colors.map(c => `<div class="color-opt" data-color="${c}" style="background: ${getColorCode(c)};"></div>`).join('')}</div></div>` : ''}
+                ${product.sizes.length ? `<div class="size-selector"><span>Размер:</span>
+                <div class="size-buttons">${product.sizes.map(s => `<button class="size-option" data-size="${s}">${s}</button>`).join('')}</div></div>` : ''}
+                ${product.colors && product.colors.length > 1 ? `<div class="color-selector">
+                <span>Цвет:</span><div class="color-buttons">${product.colors.map(c => `<div class="color-opt" data-color="${c}"
+                style="background: ${getColorCode(c)};"></div>`).join('')}</div></div>` : ''}
             </div>
             <button class="add-to-cart" data-product-id="${product.id}"><i class="fas fa-shopping-cart"></i> Добавить в корзину</button>
             <div class="card-heat-indicator">${views > 0 ? `👁️ ${views}` : ''}</div>
@@ -230,16 +251,19 @@ function renderProducts() {
     attachProductEvents();
 }
 
+//возвращает название категории одежды
 function getCategoryName(cat) {
     const names = { tshirt:'Футболки', hoodie:'Худи', pants:'Штаны', shoes:'Кроссовки', accessory:'Аксессуары' };
     return names[cat] || cat;
 }
 
+//возвращает цвет по названию
 function getColorCode(color) {
     const codes = { 'белый':'#fff', 'чёрный':'#1a1a1a', 'синий':'#3b82f6', 'серый':'#9ca3af', 'хаки':'#6b8e23', 'розовый':'#f472b6', 'бежевый':'#e5c9a5', 'коричневый':'#8b5a2b' };
     return codes[color] || '#ccc';
 }
 
+//навешивает обработчики выбора размера, цвета и добавления в корзину
 function attachProductEvents() {
     document.querySelectorAll('.size-option').forEach(btn => {
         btn.addEventListener('click', (e) => {
@@ -271,6 +295,7 @@ function attachProductEvents() {
     });
 }
 
+//проверяет, соответствует ли добавленный товар текущему заданию, и завершает задание при необходимости
 function processTaskPurchase(productId, size, color) {
     if (AppState.experimentCompleted) return;
     const currentTask = tasks[AppState.currentTaskIndex];
@@ -278,12 +303,12 @@ function processTaskPurchase(productId, size, color) {
     const required = currentTask.products.find(p => p.id === productId);
     if (required) {
         if (required.size && required.size !== size) {
-            showToast(`❌ Неверный размер! Нужен ${required.size}`);
+            showToast(`Неверный размер! Нужен ${required.size}`);
             return;
         }
         if (!AppState.taskProductsPurchased.includes(productId)) {
             AppState.taskProductsPurchased.push(productId);
-            showToast(`🎯 Верно! (${AppState.taskProductsPurchased.length} из ${currentTask.products.length})`);
+            showToast(`Верно! (${AppState.taskProductsPurchased.length} из ${currentTask.products.length})`);
         }
         if (AppState.taskProductsPurchased.length === currentTask.products.length && !AppState.taskCompleted) {
             completeTask();
@@ -293,6 +318,7 @@ function processTaskPurchase(productId, size, color) {
     }
 }
 
+//увеличивает счётчик взглядов для карточки товара
 function trackGazeOnProducts(x, y) {
     if (AppState.experimentCompleted) return;
     const target = document.elementFromPoint(x, y);
@@ -309,7 +335,9 @@ function trackGazeOnProducts(x, y) {
     }
 }
 
-// ========== TASKS ==========
+//Логика заданий
+
+//запускает таймер текущего задания
 function startTask() {
     if (AppState.timerInterval) clearInterval(AppState.timerInterval);
     AppState.taskStartTime = Date.now();
@@ -322,6 +350,7 @@ function startTask() {
     }, 100);
 }
 
+//завершает текущее задание, делает снимок тепловой карты и переходит к следующему или финиширует эксперимент
 function completeTask() {
     if (AppState.taskCompleted || AppState.experimentCompleted) return;
     AppState.taskCompleted = true;
@@ -348,6 +377,7 @@ function completeTask() {
     });
 }
 
+//загружает задание по индексу: обновляет текст, запускает таймер и показывает соответствующий баннер
 function loadTask(index) {
     if (AppState.experimentCompleted) return;
     AppState.taskProductsPurchased = [];

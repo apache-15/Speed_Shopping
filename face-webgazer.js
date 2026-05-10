@@ -1,9 +1,11 @@
-// ========== Face API ==========
+//инициализация Face API
 async function startFaceAPI() {
+    //подгрузка моделей
     await faceapi.nets.tinyFaceDetector.loadFromUri('/models');
     await faceapi.nets.faceLandmark68Net.loadFromUri('/models');
     await faceapi.nets.faceExpressionNet.loadFromUri('/models');
     const faceContainer = document.getElementById('faceVideoContainer');
+    //запуск видеоряда
     const video = document.createElement('video');
     video.autoplay = true;
     video.muted = true;
@@ -12,6 +14,7 @@ async function startFaceAPI() {
     navigator.mediaDevices.getUserMedia({ video: {} })
         .then(stream => { video.srcObject = stream; video.play(); })
         .catch(err => console.error(err));
+    // Циклическое определение эмоции
     setInterval(async () => {
         if (video.videoWidth && video.videoHeight) {
             const detection = await faceapi.detectSingleFace(video, new faceapi.TinyFaceDetectorOptions()).withFaceExpressions();
@@ -24,6 +27,7 @@ async function startFaceAPI() {
                     const emoji = getEmotionEmoji(dominant);
                     faceValues.innerHTML = `${emoji} ${dominant}: ${Math.round(expressions[dominant]*100)}%`;
                 }
+                // Запись эмоции с заданным интервалом
                 if (AppState.gameActive && !AppState.experimentCompleted) {
                     AppState.emotionRecordCounter++;
                     if (AppState.emotionRecordCounter >= EMOTION_RECORD_INTERVAL) {
@@ -46,7 +50,7 @@ function recordEmotion(emotion, prob) {
     AppState.emotionData.push({ timestamp: Date.now(), emotion, probability: prob, taskId: AppState.currentTaskIndex });
 }
 
-// ========== WebGazer ==========
+//калибровка WebGazer
 function startCalibration() {
     if (typeof webgazer === 'undefined') return alert('WebGazer не загружен!');
     AppState.isCalibrating = true;
@@ -57,6 +61,7 @@ function startCalibration() {
     document.getElementById('videoMonitor').style.display = 'flex';
     webgazer.setRegression('ridge')
         .setGazeListener((data, timestamp) => {
+            // Во время баннера пишем координаты, в другое время отслеживаем кол-во взглядов на товары
             if (data && !AppState.experimentCompleted) {
                 if (!AppState.gameActive && AppState.currentBannerType) {
                     AppState.bannerGazeData.push({ x: data.x, y: data.y, timestamp, bannerType: AppState.currentBannerType });
@@ -142,6 +147,7 @@ function finishCalibration() {
     initGame();
 }
 
+//инициализация игры
 function initGame() {
     AppState.experimentCompleted = false;
     AppState.sessionId = 'session_' + Date.now();
