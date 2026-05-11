@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Скоростной шоппинг: Eye-Tracking & Face API</title>
     <link rel="stylesheet" href="style_game.css">
-    <!-- Локальные библиотеки -->
+    <!--библиотеки -->
     <script defer src="face-api.min.js"></script>
     <script defer src="webgazer.js"></script>
     <script src="html2canvas.min.js"></script>
@@ -61,13 +61,13 @@
 
     <!-- Игровой контейнер -->
     <div id="gameContainer" style="display: none;">
-        <h1>🛍️ Скоростной шоппинг</h1>
+        <h1> Скоростной шоппинг</h1>
 
         <div class="stats">
-            <div>🎯 Заданий выполнено: <span id="tasksDone">0</span> / <span id="totalTasks">5</span></div>
-            <div>⏱️ Время задания: <span id="taskTimer">0.00</span> с</div>
-            <div>👁️ Точки взгляда: <span id="gazeCount">0</span></div>
-            <div>🛒 В корзине: <span id="cartCount">0</span></div>
+            <div> Заданий выполнено: <span id="tasksDone">0</span> / <span id="totalTasks">5</span></div>
+            <div> Время задания: <span id="taskTimer">0.00</span> с</div>
+            <div> Точки взгляда: <span id="gazeCount">0</span></div>
+            <div> В корзине: <span id="cartCount">0</span></div>
         </div>
 
         <div class="task-panel">
@@ -96,6 +96,41 @@
     </div>
 
     <div id="bannerOverlay" style="display: none;"></div>
+
+     <!-- Окно финального опроса -->
+    <div id="surveyOverlay" class="register-overlay" style="display: none;">
+        <div class="register-modal" style="text-align: left; max-width: 600px; max-height: 90vh; overflow-y: auto;">
+            <h2>Финальный опрос</h2>
+            <form id="surveyForm">
+                <p><b>1. Какие баннеры показались вам наиболее раздражающими?</b> (можно выбрать несколько)</p>
+                <label><input type="checkbox" name="banner" value="classic"> Обычный баннер</label><br>
+                <label><input type="checkbox" name="banner" value="multi"> Много баннеров</label><br>
+                <label><input type="checkbox" name="banner" value="shifted"> Баннер с крестиком в неожиданном месте</label><br>
+                <label><input type="checkbox" name="banner" value="camouflage"> Баннер с малозаметным крестиком</label><br>
+                <label><input type="checkbox" name="banner" value="dark"> Баннер с обманной кнопкой</label><br><br>
+
+                <p><b>2. Появилось ли у вас в какой-то момент желание закрыть сайт?</b></p>
+                <label><input type="radio" name="closeDesire" value="yes"> Да</label>
+                <label><input type="radio" name="closeDesire" value="no"> Нет</label><br><br>
+
+                <p><b>3. Помните ли вы, что было на последнем баннере?</b> (кратко опишите)</p>
+                <input type="text" name="lastBannerMemory" placeholder="Ваш ответ" style="width: 100%;"><br><br>
+
+                <p><b>4. Насколько утомительным показался эксперимент?</b> (1 — совсем нет, 5 — очень сильно)</p>
+                <label><input type="radio" name="fatigue" value="1"> 1</label>
+                <label><input type="radio" name="fatigue" value="2"> 2</label>
+                <label><input type="radio" name="fatigue" value="3"> 3</label>
+                <label><input type="radio" name="fatigue" value="4"> 4</label>
+                <label><input type="radio" name="fatigue" value="5"> 5</label><br><br>
+
+                <p><b>5. Сталкивались ли вы с подобными баннерами в реальных интернет-магазинах?</b></p>
+                <label><input type="radio" name="seenBefore" value="yes"> Да</label>
+                <label><input type="radio" name="seenBefore" value="no"> Нет</label><br><br>
+
+                <button type="button" id="surveySubmitBtn" class="register-modal button">Завершить и скачать результаты</button>
+            </form>
+        </div>
+    </div>
 
     <!-- Модули приложения (в порядке зависимостей) -->
     <script src="config.js"></script>

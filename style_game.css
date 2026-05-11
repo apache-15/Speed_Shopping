@@ -551,3 +551,25 @@ body {
 #heatmapCanvas {
     display: none;
 }
+
+/* Оформление опроса */
+.register-modal input[type="checkbox"],
+.register-modal input[type="radio"] {
+    margin-right: 8px;
+    transform: scale(1.1);
+    vertical-align: middle;
+}
+.register-modal label {
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 15px;
+    cursor: pointer;
+}
+#surveyForm p {
+    margin: 18px 0 8px;
+    font-weight: 500;
+}
+#surveySubmitBtn {
+    margin-top: 20px;
+    width: 100%;
+}

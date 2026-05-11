@@ -1,4 +1,4 @@
-//тепловая карта для баннера
+//Тепловая карта для баннера
 async function captureHeatmapScreenshot(taskIdx) {
     if (!AppState.currentBannerGaze.length) {
         console.warn(`Нет данных взгляда для задания ${taskIdx+1}`);
@@ -75,7 +75,7 @@ async function captureHeatmapScreenshot(taskIdx) {
     console.log(`Тепловая карта для задания ${taskIdx+1} создана`);
 }
 
-//сохранение результатов в ZIP
+//Сохранение результатов в ZIP
 async function exportResultsAsZip() {
     if (!AppState.sessionId) AppState.sessionId = 'session_' + Date.now();
     const safeUserName = AppState.userName ? AppState.userName.replace(/[^a-z0-9]/gi, '_') : 'anonymous';
@@ -83,7 +83,7 @@ async function exportResultsAsZip() {
     const zip = new JSZip();
     const folder = zip.folder(AppState.sessionId);
 
-    //расчёт средних времён по типам баннеров
+    //формирование средних времён по типам баннеров
     const bannerStats = {};
     AppState.bannerMetrics.forEach(m => {
         if (!bannerStats[m.type]) bannerStats[m.type] = { totalTime: 0, count: 0, times: [] };
@@ -112,7 +112,8 @@ async function exportResultsAsZip() {
         emotionSummary: AppState.emotionData.reduce((acc, e) => {
             acc[e.emotion] = (acc[e.emotion] || 0) + 1;
             return acc;
-        }, {})
+        }, {}),
+        survey: AppState.surveyAnswers || {}
     };
     folder.file('report.json', JSON.stringify(report, null, 2));
 

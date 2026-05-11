@@ -350,7 +350,7 @@ function startTask() {
     }, 100);
 }
 
-//завершает текущее задание, делает снимок тепловой карты и переходит к следующему или финиширует эксперимент
+//завершает текущее задание, делает снимок тепловой карты и переходит к следующему или показывает финальный опрос
 function completeTask() {
     if (AppState.taskCompleted || AppState.experimentCompleted) return;
     AppState.taskCompleted = true;
@@ -358,7 +358,7 @@ function completeTask() {
     const elapsed = (Date.now() - AppState.taskStartTime) / 1000;
     AppState.tasksDone++;
     document.getElementById('tasksDone').innerText = AppState.tasksDone;
-    showToast(`✅ Задание ${AppState.currentTaskIndex+1} выполнено за ${elapsed.toFixed(1)} сек!`);
+    showToast(` Задание ${AppState.currentTaskIndex+1} выполнено за ${elapsed.toFixed(1)} сек`);
 
     captureHeatmapScreenshot(AppState.currentTaskIndex).then(() => {
         AppState.currentTaskIndex++;
@@ -367,12 +367,11 @@ function completeTask() {
         } else {
             AppState.experimentCompleted = true;
             AppState.gameActive = false;
-            document.getElementById('taskText').innerText = '🎉 Все задания выполнены! Спасибо! 🎉';
-            showToast('🏆 Поздравляем! Выполнены все задания!');
-            document.getElementById('statusText').innerText = '🏆 Игра пройдена! 🏆';
-            setTimeout(() => {
-                if (confirm('Эксперимент завершён. Сохранить результаты?')) exportResultsAsZip();
-            }, 500);
+            document.getElementById('taskText').innerText = ' Все задания выполнены! Спасибо! ';
+            showToast('Поздравляем! Выполнены все задания');
+            document.getElementById('statusText').innerText = 'Всё пройдено!';
+            //показываем финальный опрос
+            document.getElementById('surveyOverlay').style.display = 'flex';
         }
     });
 }
@@ -385,4 +384,40 @@ function loadTask(index) {
     document.getElementById('taskText').innerText = tasks[index].text;
     startTask();
     showExperimentalBanner(tasks[index].bannerType);
+}
+
+//показывает окно опроса
+function showSurvey() {
+    document.getElementById('surveyOverlay').style.display = 'flex';
+}
+
+//скрывает окно опроса
+function hideSurvey() {
+    document.getElementById('surveyOverlay').style.display = 'none';
+}
+
+//собирает ответы из формы опроса
+function collectSurveyAnswers() {
+    const form = document.getElementById('surveyForm');
+    const answer = {
+        irritatingBanners: [],
+        closeDesire: null,
+        lastBannerMemory: '',
+        fatigueLevel: null,
+        seenBefore: null
+    };
+    // чекбоксы
+    const checkboxes = form.querySelectorAll('input[name="banner"]:checked');
+    checkboxes.forEach(cb => answer.irritatingBanners.push(cb.value));
+    // кнопки-да/нет
+    const closeRadio = form.querySelector('input[name="closeDesire"]:checked');
+    if (closeRadio) answer.closeDesire = closeRadio.value;
+    const fatigueRadio = form.querySelector('input[name="fatigue"]:checked');
+    if (fatigueRadio) answer.fatigueLevel = parseInt(fatigueRadio.value);
+    const seenRadio = form.querySelector('input[name="seenBefore"]:checked');
+    if (seenRadio) answer.seenBefore = seenRadio.value;
+    // текстовое поле
+    const textInput = form.querySelector('input[name="lastBannerMemory"]');
+    if (textInput) answer.lastBannerMemory = textInput.value.trim();
+    return answer;
 }

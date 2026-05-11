@@ -168,4 +168,5 @@ function initGame() {
     renderProducts();
     loadTask(0);
     webgazer.resume();
+    AppState.surveyAnswers = null;
 }
