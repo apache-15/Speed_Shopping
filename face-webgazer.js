@@ -1,9 +1,9 @@
 //инициализация Face API
 async function startFaceAPI() {
     //подгрузка моделей
-    await faceapi.nets.tinyFaceDetector.loadFromUri('/models');
-    await faceapi.nets.faceLandmark68Net.loadFromUri('/models');
-    await faceapi.nets.faceExpressionNet.loadFromUri('/models');
+    await faceapi.nets.tinyFaceDetector.loadFromUri('./models');
+    await faceapi.nets.faceLandmark68Net.loadFromUri('./models');
+    await faceapi.nets.faceExpressionNet.loadFromUri('./models');
     const faceContainer = document.getElementById('faceVideoContainer');
     //запуск видеоряда
     const video = document.createElement('video');
