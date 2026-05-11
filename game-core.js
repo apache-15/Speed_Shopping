@@ -243,7 +243,7 @@ function renderProducts() {
                 <span>Цвет:</span><div class="color-buttons">${product.colors.map(c => `<div class="color-opt" data-color="${c}"
                 style="background: ${getColorCode(c)};"></div>`).join('')}</div></div>` : ''}
             </div>
-            <button class="add-to-cart" data-product-id="${product.id}"><i class="fas fa-shopping-cart"></i> Добавить в корзину</button>
+            <button class="add-to-cart" data-product-id="${product.id}"> Добавить в корзину</button>
             <div class="card-heat-indicator">${views > 0 ? `👁️ ${views}` : ''}</div>
         `;
         grid.appendChild(card);
