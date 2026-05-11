@@ -50,11 +50,11 @@ const products = [
 
 //задания
 const tasks = [
-    { text: 'Задание 1: Купите синюю футболку (ID 1).', products: [{ id: 1 }], bannerType: 'classic' },
-    { text: 'Задание 2: Купите серое худи (ID 4).', products: [{ id: 4 }], bannerType: 'multi' },
-    { text: 'Задание 3: Купите чёрные штаны (ID 6).', products: [{ id: 6 }], bannerType: 'shifted' },
-    { text: 'Задание 4: Купите джинсы (ID 8).', products: [{ id: 8 }], bannerType: 'camouflage' },
-    { text: 'Задание 5: Купите белые кроссовки (ID 9).', products: [{ id: 9 }], bannerType: 'dark' }
+    { text: 'Задание 1: Купите синюю футболку.', products: [{ id: 1 }], bannerType: 'classic' },
+    { text: 'Задание 2: Купите серое худи.', products: [{ id: 4 }], bannerType: 'multi' },
+    { text: 'Задание 3: Купите чёрные штаны.', products: [{ id: 6 }], bannerType: 'shifted' },
+    { text: 'Задание 4: Купите джинсы.', products: [{ id: 8 }], bannerType: 'camouflage' },
+    { text: 'Задание 5: Купите белые кроссовки.', products: [{ id: 9 }], bannerType: 'dark' }
 ];
 
 //константа для промежутка между записью эмоций

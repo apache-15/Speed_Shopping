@@ -111,7 +111,7 @@ function createBanner(type, position) {
     let content = `<div class="banner-text">${getBannerText(type)}</div>`;
     const productImages = [
         'картинки/blue-T-shirt.png',
-        'картинки/black-hoody.png',
+        'картинки/black-T-shirt.png',
         'картинки/white-sneakers.png',
         'картинки/jeans.png',
         'картинки/cap.png'
@@ -124,7 +124,7 @@ function createBanner(type, position) {
         content += `<img src="${randomImg}" class="banner-img" alt="товар">`;
     }
 
-    //добавление пояснительного текста под типу
+    //добавление доп. текста по баннерам
     if (type === 'classic') {
         content += `<div class="banner-subtext">Скидка действует сегодня ; Бесплатная доставка</div>`;
     } else if (type === 'camouflage') {

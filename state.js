@@ -37,5 +37,6 @@ const AppState = {
     //тепловые карты и экспорт
     taskHeatmapScreenshots: [],
     sessionId: null,
+    //состояние ответов опроса
     surveyAnswers: null
 };
